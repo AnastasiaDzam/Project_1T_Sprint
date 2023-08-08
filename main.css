@@ -29,17 +29,25 @@
 
 .home {
   background: rgb(65, 6, 73);
-  padding-bottom: 1000px;
-}
-
-.home_wrap {
-  max-width: 1920px;
-  margin: 0 auto;
 }
 
 .section_wrap {
   max-width: 1760px;
-  margin: auto;
+  margin: 0 auto;
+}
+
+.margin_t_b {
+  margin: 70px 0px;
+}
+
+.margin_b {
+  margin-bottom: 70px;
+}
+
+.background_city_prof {
+  background-image: url(img/city_prof.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* хедер */
@@ -48,11 +56,13 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 0px 30px;
 }
 
-.btn_tg {
+.btn_tg,
+.btn_lk {
   padding: 17px 65px;
-  border-radius: 5px;
+  border-radius: 10px;
   color: white;
   background: linear-gradient(90deg, #c800c8 0%, #9600ff 100%, #9600ff 100%),
     linear-gradient(
@@ -67,6 +77,7 @@
   cursor: pointer;
 }
 
+/* ВСТУПИТЕЛЬНАЯ */
 /* Найти себя в айти */
 
 .title_search {
@@ -75,12 +86,19 @@
   text-align: center;
   font-family: "Furore";
   font-weight: 400;
+  z-index: 0;
   position: relative;
 }
 
-.wrap_people_img {
+.people_wrap {
+  min-height: 650px;
   position: absolute;
+  z-index: 2;
+  width: 100%;
   transform: translate(3%, -10%);
+  background-image: url(img/people.png);
+  background-repeat: no-repeat;
+  max-width: 1620px;
 }
 
 .wrap_people_text {
@@ -92,9 +110,10 @@
   backdrop-filter: blur(40px);
   padding: 54px 225px;
   text-align: center;
+  z-index: 3;
   position: absolute;
-  bottom: 43%;
-  max-width: 1760px;
+  top: 820px;
+  max-width: 1720px;
 }
 
 /* Диалоговое Ита */
@@ -118,14 +137,14 @@
 .dialog_wrap_text_top {
   position: absolute;
   max-width: 700px;
-  bottom: 25%;
+  bottom: 6%;
   left: 39%;
 }
 
 .dialog_wrap_text_bottom {
   position: absolute;
   max-width: 700px;
-  bottom: 18%;
+  bottom: -2%;
   left: 52%;
 }
 
@@ -133,10 +152,8 @@
 
 .question_ita_wrap {
   display: flex;
-  margin-top: 70px;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 40px;
 }
 
 .question_ita_text {
@@ -151,34 +168,84 @@
 }
 
 .question_ita_text_top {
-    padding-bottom: 40px;
+  padding-bottom: 40px;
 }
 
 .background_city {
-background-image: url(img/city.png);
-background-repeat: no-repeat;
-background-position: center;
+  background-image: url(img/city.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 /* Зарегистрируйся, чтобы начать игру */
 
 .registration_index_wrap {
-display: flex;
-flex-direction: column;
-align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .registration_index {
-    font-size: 48px;
-    font-family: "Furore";
-    color: white;
-    padding: 75px 0px;
+  font-size: 48px;
+  font-family: "Furore";
+  color: white;
+  padding: 75px 0px;
 }
 
 .start_game {
-    color: #8E24AA;
+  color: #8e24aa;
 }
 
-.registration_btn {
-    margin-bottom: 70px;
+/* МЕНЕДЖЕР */
+
+/* хедер */
+.background_manager {
+  background-image: url(manager/img/manager.png);
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: space-between;
+  min-height: 580px;
+  background-position: bottom;
+  padding: 60px 30px;
+}
+
+.wrap_header_btn {
+  padding-right: 30px;
+  align-items: flex-start;
+  display: flex;
+}
+
+.btn_user {
+  margin-right: 100px;
+  padding: 15px 22px;
+  color: white;
+ border-radius: 5px;
+  background: var(
+    --gradient-pink-dark-purple-90,
+    linear-gradient(90deg, #c800c8 0%, #9600ff 100%, #9600ff 100%)
+  );
+  box-shadow: 0px 0px 40px 0px rgba(240, 0, 250, 0.5),
+    0px 0px 20px 0px rgba(0, 25, 240, 0.5);
+  font-family: "Play";
+  font-size: 24px;
+  cursor: pointer;
+  border: none;
+  display: flex;
+    align-items: center;
+}
+
+.name_user {
+  margin-left: 24px;
+}
+
+.btn_exit {
+  padding: 16px 61px;
+  font-size: 22px;
+  background: none;
+  font-family: "Play";
+  color: #dcdcf0;
+  border-radius: 5px;
+  border: 1.5px solid #f000fa;
+  box-shadow: 0px 0px 10px 0px #f000fa, 0px 0px 5px 0px #0019f0;
 }
