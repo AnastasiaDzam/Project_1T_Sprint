@@ -8,23 +8,35 @@
   src: url(fonts/BadComic.woff2);
   font-family: "BadComic";
 }
+
 @font-face {
   src: url(fonts/Furore.woff2);
   font-family: "Furore";
 }
+
 @font-face {
   src: url(fonts/Montserrat.woff2);
   font-family: "Montserrat";
 }
+
 @font-face {
   src: url(fonts/Play.woff2);
   font-family: "Play";
+}
+
+@font-face {
+  src: url(fonts/Manga.woff2);
+  font-family: "Manga";
 }
 
 /* общие */
 
 .img_width {
   width: 100%;
+}
+
+.contain {
+  padding: 0 20px;
 }
 
 .home {
@@ -49,6 +61,8 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+/* ВСТУПИТЕЛЬНАЯ */
 
 /* хедер */
 
@@ -77,7 +91,6 @@
   cursor: pointer;
 }
 
-/* ВСТУПИТЕЛЬНАЯ */
 /* Найти себя в айти */
 
 .title_search {
@@ -195,57 +208,4 @@
 
 .start_game {
   color: #8e24aa;
-}
-
-/* МЕНЕДЖЕР */
-
-/* хедер */
-.background_manager {
-  background-image: url(manager/img/manager.png);
-  background-repeat: no-repeat;
-  display: flex;
-  justify-content: space-between;
-  min-height: 580px;
-  background-position: bottom;
-  padding: 60px 30px;
-}
-
-.wrap_header_btn {
-  padding-right: 30px;
-  align-items: flex-start;
-  display: flex;
-}
-
-.btn_user {
-  margin-right: 100px;
-  padding: 15px 22px;
-  color: white;
- border-radius: 5px;
-  background: var(
-    --gradient-pink-dark-purple-90,
-    linear-gradient(90deg, #c800c8 0%, #9600ff 100%, #9600ff 100%)
-  );
-  box-shadow: 0px 0px 40px 0px rgba(240, 0, 250, 0.5),
-    0px 0px 20px 0px rgba(0, 25, 240, 0.5);
-  font-family: "Play";
-  font-size: 24px;
-  cursor: pointer;
-  border: none;
-  display: flex;
-    align-items: center;
-}
-
-.name_user {
-  margin-left: 24px;
-}
-
-.btn_exit {
-  padding: 16px 61px;
-  font-size: 22px;
-  background: none;
-  font-family: "Play";
-  color: #dcdcf0;
-  border-radius: 5px;
-  border: 1.5px solid #f000fa;
-  box-shadow: 0px 0px 10px 0px #f000fa, 0px 0px 5px 0px #0019f0;
 }

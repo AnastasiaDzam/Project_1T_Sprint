@@ -1,0 +1,349 @@
+/* МЕНЕДЖЕР */
+
+/* хедер */
+.background_manager {
+  background-image: url(img/manager.png);
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: space-between;
+  min-height: 580px;
+  background-position: bottom;
+  padding: 60px 30px;
+}
+
+.wrap_header_btn {
+  padding-right: 30px;
+  align-items: flex-start;
+  display: flex;
+}
+
+.btn_user {
+  margin-right: 100px;
+  padding: 15px 22px;
+  color: white;
+  border-radius: 5px;
+  background: var(
+    --gradient-pink-dark-purple-90,
+    linear-gradient(90deg, #c800c8 0%, #9600ff 100%, #9600ff 100%)
+  );
+  box-shadow: 0px 0px 40px 0px rgba(240, 0, 250, 0.5),
+    0px 0px 20px 0px rgba(0, 25, 240, 0.5);
+  font-family: "Play";
+  font-size: 24px;
+  cursor: pointer;
+  border: none;
+  display: flex;
+  align-items: center;
+}
+
+.name_user {
+  margin-left: 24px;
+}
+
+.btn_exit {
+  padding: 16px 61px;
+  font-size: 22px;
+  background: none;
+  font-family: "Play";
+  color: #dcdcf0;
+  border-radius: 5px;
+  border: 1.5px solid #f000fa;
+  box-shadow: 0px 0px 10px 0px #f000fa, 0px 0px 5px 0px #0019f0;
+}
+
+/* Ранее в комиксе */
+
+.earlier {
+  border-radius: 20px;
+  padding: 8px 20px;
+  background: linear-gradient(
+    134deg,
+    rgba(34, 19, 56, 0.48) 48.02%,
+    rgba(57, 29, 70, 0.45) 100%
+  );
+  max-width: 309px;
+  margin-bottom: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.earlier_min {
+  font-size: 22px;
+  padding: 30px 0;
+  font-family: "Manga";
+  color: white;
+}
+
+.earlier_wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+.earlier_comics {
+  padding: 20px 70px;
+}
+
+.earlier_background {
+  display: none;
+  position: relative;
+  z-index: 1;
+  max-width: 868px;
+  margin: auto;
+  border-radius: 20px;
+  background: linear-gradient(#4d0059, #3b0680);
+}
+
+.earlier_text {
+  color: white;
+  font-size: 32px;
+  padding: 20px;
+  font-family: "Play";
+  padding: 30px 100px 104px 100px;
+}
+
+.material_help {
+  color: white;
+  font-size: 36px !important;
+  cursor: pointer;
+}
+
+.material_close {
+  color: white;
+  font-size: 58px !important;
+  cursor: pointer;
+}
+
+.arrow_background {
+  background-image: url(img/triangle.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: 235px;
+  background-position-y: 60px;
+}
+
+/* Менеджер Олег */
+
+.oleg_wrap {
+  box-shadow: 11px -9px 43px 0px #e0e0e033 inset;
+  border-radius: 20px;
+  backdrop-filter: blur(40px);
+  display: flex;
+  margin-top: 150px;
+  position: relative;
+}
+
+.oleg_text {
+  color: #fff;
+  font-family: "Play";
+  font-size: 32px;
+  padding: 162px;
+  max-width: 1140px;
+}
+
+.oleg_img_wrap {
+  position: absolute;
+  right: 110px;
+  bottom: 0px;
+}
+
+/* .test {
+  position: relative;
+  border-radius: 30px;
+  box-shadow: 11px -9px 43px 0px #e0e0e033 inset;
+}
+
+.test:before {
+  content: " ";
+  position: absolute;
+  width: 368px;
+  height: 368px;
+  left: 70px;
+  border-radius: 20px;
+  transform: rotate(-45deg);
+  top: 69px;
+  box-shadow: 11px -9px 43px 0px #e0e0e033 inset;
+} */
+
+/* Что делает менеджер? */
+
+.what_doing_wrap {
+  position: relative;
+}
+
+.what_doing_contain {
+  margin-left: 15%;
+  margin-bottom: 150px;
+}
+
+.what_doing_ita {
+  position: absolute;
+  left: -50px;
+}
+
+.what_doing_title {
+  text-align: center;
+  font-family: "Furore";
+  color: #fff;
+  font-weight: 400;
+  font-size: 48px;
+  margin: 140px 0 60px 0;
+}
+
+.what_doing_list {
+  color: #fff;
+  font-family: "Montserrat";
+  font-size: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1140px;
+  margin: auto;
+  align-items: center;
+}
+
+.what_doing_item {
+  list-style-type: none;
+  max-width: 500px;
+  margin-bottom: 50px;
+}
+
+.what_doing_item_span {
+  padding-left: 18%;
+}
+
+.what_doing_item::before {
+  content: counter(count, decimal-leading-zero);
+  margin-right: 32px;
+  color: #9600ff;
+  font-family: "Furore";
+  font-size: 40px;
+}
+
+.item_for {
+  padding-right: 64px;
+}
+
+/* Вопросы от Иты №1 */
+
+.material_warning {
+  font-size: 100px !important;
+}
+
+.question_1_wrap {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 100px;
+}
+
+.check {
+  color: #fff;
+  font-family: "Montserrat";
+  font-size: 18px;
+  background: linear-gradient(315deg, #023f83 0%, rgba(36, 1, 88, 0.87) 100%),
+    #fff;
+  padding: 17px 30px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+  max-width: 655px;
+}
+
+.img_warning {
+  padding-right: 15px;
+}
+
+.question_answer_wrap {
+  border-radius: 20px;
+  background: var(
+    --glass-light-blue,
+    linear-gradient(315deg, rgba(0, 120, 255, 0.2) 0%, rgba(10, 0, 25, 0) 100%),
+    rgba(255, 255, 255, 0.05)
+  );
+  padding: 28px 88px;
+  max-width: 850px;
+  margin-bottom: 16px;
+}
+
+.question_answer_block {
+  display: flex;
+}
+
+.question_answer_block_input {
+  width: 31px;
+  height: 28px;
+}
+
+.question_answer_subtitle {
+  display: flex;
+  align-items: center;
+}
+
+.question_answer_subtitle,
+.question_answer_text {
+  color: #fff;
+  font-family: "Montserrat" !important;
+  font-size: 16px;
+  font-weight: 400;
+  max-width: 680px;
+  padding-bottom: 24px;
+}
+
+.question_answer_text {
+  padding-left: 24px;
+}
+
+.question_answer_count::before {
+  content: counter(count, decimal-leading-zero);
+  margin-right: 15px;
+  color: #9600ff;
+  font-family: "Furore";
+  font-size: 28px;
+}
+
+.question_answer_subtitle_span {
+  padding-left: 8%;
+}
+
+.question_answer_btn {
+  padding: 12px 32px;
+  border-radius: 12px;
+  font-family: Play;
+  color: white;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  cursor: pointer;
+  background: var(
+    --gradient-purple-blue-90,
+    linear-gradient(90deg, #9600ff 0%, #0019ff 100%)
+  );
+  display: flex;
+  margin: auto;
+}
+
+.question_answer_help {
+  border-radius: 20px;
+  background: linear-gradient(315deg, #023f83 0%, rgba(36, 1, 88, 0.87) 100%),
+    #fff;
+  display: flex;
+  padding: 16px 27px;
+  align-items: flex-start;
+  max-width: 850px;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 16px;
+}
+
+.warning_circle {
+  padding-right: 20px;
+}
+
+/* Комикс №2 */
+
+.comics_m {
+  margin-bottom: 100px;
+}
