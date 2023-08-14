@@ -43,6 +43,7 @@
 .btn_exit {
   padding: 16px 61px;
   font-size: 22px;
+  cursor: pointer;
   background: none;
   font-family: "Play";
   color: #dcdcf0;
@@ -127,45 +128,25 @@
 /* Менеджер Олег */
 
 .oleg_wrap {
-  box-shadow: 11px -9px 43px 0px #e0e0e033 inset;
-  border-radius: 20px;
-  backdrop-filter: blur(40px);
-  display: flex;
-  margin-top: 150px;
   position: relative;
+  margin-top: 160px;
 }
 
 .oleg_text {
   color: #fff;
   font-family: "Play";
   font-size: 32px;
-  padding: 162px;
-  max-width: 1140px;
+  max-width: 850px;
+  position: absolute;
+  top: 31%;
+  left: 15%;
 }
 
 .oleg_img_wrap {
   position: absolute;
-  right: 110px;
-  bottom: 0px;
+  right: 5px;
+  top: -48px;
 }
-
-/* .test {
-  position: relative;
-  border-radius: 30px;
-  box-shadow: 11px -9px 43px 0px #e0e0e033 inset;
-}
-
-.test:before {
-  content: " ";
-  position: absolute;
-  width: 368px;
-  height: 368px;
-  left: 70px;
-  border-radius: 20px;
-  transform: rotate(-45deg);
-  top: 69px;
-  box-shadow: 11px -9px 43px 0px #e0e0e033 inset;
-} */
 
 /* Что делает менеджер? */
 
@@ -208,6 +189,8 @@
   list-style-type: none;
   max-width: 500px;
   margin-bottom: 50px;
+  display: flex;
+  align-items: center;
 }
 
 .what_doing_item_span {
@@ -263,18 +246,39 @@
     linear-gradient(315deg, rgba(0, 120, 255, 0.2) 0%, rgba(10, 0, 25, 0) 100%),
     rgba(255, 255, 255, 0.05)
   );
-  padding: 28px 88px;
+  padding: 28px 75px;
   max-width: 850px;
   margin-bottom: 16px;
 }
 
-.question_answer_block {
-  display: flex;
+.question_answer_block input[type="radio"] {
+  display: none;
 }
 
-.question_answer_block_input {
-  width: 31px;
+.question_answer_block label {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  padding-left: 25px;
+}
+
+.question_answer_block label:before {
+  content: "";
+  display: inline-block;
+  width: 28px;
   height: 28px;
+  position: absolute;
+  left: -15px;
+  bottom: 30px;
+  background: url(../img/question_circle_external.png) 0 0 no-repeat;
+}
+
+.question_answer_block input[type="radio"]:checked + label:before {
+  background: url(../img/radioButton.png) 0 0 no-repeat;
+}
+
+.question_answer_block label:hover:before {
+  filter: brightness(120%);
 }
 
 .question_answer_subtitle {
@@ -288,12 +292,7 @@
   font-family: "Montserrat" !important;
   font-size: 16px;
   font-weight: 400;
-  max-width: 680px;
   padding-bottom: 24px;
-}
-
-.question_answer_text {
-  padding-left: 24px;
 }
 
 .question_answer_count::before {
@@ -346,4 +345,113 @@
 
 .comics_m {
   margin-bottom: 100px;
+}
+
+/* Этап реализации */
+
+.realization_wrap {
+  box-shadow: 0px 10px 28px 0px rgba(224, 224, 224, 0.25) inset,
+    9px -9px 49px 0px rgba(224, 224, 224, 0.73) inset;
+  border-radius: 20px;
+  padding: 50px 60px;
+  display: flex;
+  margin-bottom: 115px;
+}
+
+.realization_text {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 20px;
+}
+
+.realization_m {
+  margin-bottom: 20px;
+  max-width: 1200px;
+}
+
+.realization_introduction {
+  margin-bottom: 40px;
+  max-width: 1270px;
+}
+
+/* Комикс №4 */
+
+.comics_4 {
+  margin-bottom: 40px;
+}
+
+/* Ответ на задание */
+
+.task_wrap {
+  border-radius: 20px;
+  background: linear-gradient(315deg, #023f83 0%, rgba(36, 1, 88, 0.87) 100%),
+    #fff;
+  max-width: 1440px;
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.task_text {
+  color: #fff;
+  font-family: "Montserrat";
+  font-size: 20px;
+  font-weight: 400;
+  padding-left: 45px;
+}
+
+.task_input {
+  border-radius: 16px;
+  background: #e6cdff;
+  box-shadow: 4px 4px 20px 0px #1d0038 inset;
+  font-family: "Inter";
+  font-size: 32px;
+  width: 100%;
+  padding: 30px;
+  margin: 70px 0 40px 0;
+}
+
+/* Конец главы */
+
+.end_text {
+  color: #fff;
+  font-family: "Furore";
+  font-size: 48px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.end_hab,
+.end_next_for {
+  color: var(--white, #dcdcf0);
+  font-family: "Play";
+  font-size: 22px;
+  text-decoration: none;
+}
+
+.end_hab {
+  border-radius: 5px;
+  box-shadow: 0px 0px 20px 0px #f000fa, 0px 0px 10px 0px #0019f0;
+  backdrop-filter: blur(25px);
+  padding: 16px 50px;
+  margin-right: 20px;
+}
+
+.end_next_for {
+  border-radius: 5px;
+  background: var(
+    --gradient-pink-dark-purple-90,
+    linear-gradient(90deg, #c800c8 0%, #9600ff 100%, #9600ff 100%)
+  );
+  box-shadow: 0px 0px 40px 0px rgba(240, 0, 250, 0.5),
+    0px 0px 20px 0px rgba(0, 25, 240, 0.5);
+  backdrop-filter: blur(25px);
+  padding: 16px 50px;
+}
+
+.end_link {
+  text-align: center;
+  padding-bottom: 140px;
 }

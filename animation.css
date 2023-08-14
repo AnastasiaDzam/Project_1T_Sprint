@@ -1,9 +1,17 @@
 /* хедер */
-.btn_tg:hover {
+.btn_hover_gradient:hover {
   background: linear-gradient(260deg, #c800c8 0%, #9600ff 100%, #9600ff 100%),
     linear-gradient(
       135deg,
       rgba(255, 255, 255, 0.2) 0%,
       rgba(255, 255, 255, 0) 100%
     );
+}
+
+.btn_hover_transparent:hover {
+  box-shadow: 0px 0px 10px 5px #f000fa, 0px 0px 5px 0px #0019f0;
+}
+
+.task_input:focus-visible {
+  outline: none;
 }
