@@ -1,5 +1,11 @@
 /* МЕНЕДЖЕР */
 
+main {
+  background: url("img/background/bg_top_left.png") no-repeat 304% 2%,
+  url("img/background/bg_top_ellipse_right.png") no-repeat 100% 13%,
+  url("img/background/bg_top_right.png") no-repeat -286% 28%;
+}
+
 /* хедер */
 .background_manager {
   background-image: url(img/manager.png);
@@ -118,7 +124,7 @@
 }
 
 .arrow_background {
-  background-image: url(img/triangle.png);
+  background-image: url(img/background/triangle.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position-x: 235px;
@@ -142,10 +148,14 @@
   left: 15%;
 }
 
-.oleg_img_wrap {
+.oleg_img_wrap {  
   position: absolute;
   right: 5px;
   top: -48px;
+}
+
+.oleg_svg {
+  backdrop-filter: blur(12px);
 }
 
 /* Что делает менеджер? */

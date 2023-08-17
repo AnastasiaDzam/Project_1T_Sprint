@@ -15,3 +15,10 @@
 .task_input:focus-visible {
   outline: none;
 }
+
+.question_answer_btn:hover {
+  background: var(
+    --gradient-purple-blue-90,
+    linear-gradient(260deg, #9600ff 0%, #0019ff 100%)
+  );
+}
