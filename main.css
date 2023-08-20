@@ -1,74 +1,74 @@
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 @font-face {
-  src: url(fonts/BadComic.woff2);
-  font-family: "BadComic";
+    src: url(fonts/BadComic.woff2);
+    font-family: "BadComic";
 }
 
 @font-face {
-  src: url(fonts/Furore.woff2);
-  font-family: "Furore";
+    src: url(fonts/Furore.woff2);
+    font-family: "Furore";
 }
 
 @font-face {
-  src: url(fonts/Montserrat.woff2);
-  font-family: "Montserrat";
+    src: url(fonts/Montserrat.woff2);
+    font-family: "Montserrat";
 }
 
 @font-face {
-  src: url(fonts/Play.woff2);
-  font-family: "Play";
+    src: url(fonts/Play.woff2);
+    font-family: "Play";
 }
 
 @font-face {
-  src: url(fonts/Manga.woff2);
-  font-family: "Manga";
+    src: url(fonts/Manga.woff2);
+    font-family: "Manga";
 }
 
 @font-face {
-  src: url(fonts/Inter.woff2);
-  font-family: "Inter";
+    src: url(fonts/Inter.woff2);
+    font-family: "Inter";
 }
 
 /* общие */
 main {
-  background: url("./img/background/bg-top-right.png") no-repeat 100% 8%,
+    background: url("./img/background/bg-top-right.png") no-repeat 100% 8%,
     url("./img/background/bg-top-center.png") no-repeat 100% 8%;
 }
 
 .img_width {
-  width: 100%;
+    width: 100%;
 }
 
 .contain {
-  padding: 0 20px;
+    padding: 0 20px;
 }
 
 .home {
-  background: #0a0019;
+    background: #0a0019;
 }
 
 .section_wrap {
-  max-width: 1760px;
-  margin: 0 auto;
+    max-width: 1760px;
+    margin: 0 auto;
 }
 
 .margin_t_b {
-  margin: 70px 0px;
+    margin: 70px 0px;
 }
 
 .margin_b {
-  margin-bottom: 70px;
+    margin-bottom: 70px;
 }
 
 .background_city_prof {
-  background-image: url(img/city_prof.png);
-  background-repeat: no-repeat;
-  background-size: cover;
+    background-image: url(img/city_prof.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /* ВСТУПИТЕЛЬНАЯ */
@@ -76,145 +76,231 @@ main {
 /* хедер */
 
 .header_wrap {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 30px;
 }
 
 .btn_tg,
 .btn_lk {
-  padding: 17px 65px;
-  border-radius: 10px;
-  color: white;
-  background: linear-gradient(90deg, #c800c8 0%, #9600ff 100%, #9600ff 100%),
+    border: none;
+    padding: 16px 32px;
+    border-radius: 10px;
+    color: white;
+    background: linear-gradient(90deg, #c800c8 0%, #9600ff 100%, #9600ff 100%),
     linear-gradient(
-      135deg,
-      rgba(255, 255, 255, 0.2) 0%,
-      rgba(255, 255, 255, 0) 100%
+            135deg,
+            rgba(255, 255, 255, 0.2) 0%,
+            rgba(255, 255, 255, 0) 100%
     );
-  box-shadow: 0px 0px 20px 0px #0019f080;
-  text-transform: inherit;
-  font-family: "Play";
-  font-size: 24px;
-  cursor: pointer;
+    box-shadow: 0px 0px 20px 0px #0019f080;
+    text-transform: inherit;
+    font-family: "Play";
+    font-size: 24px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Найди себя в айти */
 
 .title_search {
-  color: white;
-  font-size: 155px;
-  text-align: center;
-  font-family: "Furore";
-  font-weight: 400;
-  z-index: 0;
-  position: relative;
+    color: white;
+    font-size: 155px;
+    text-align: center;
+    font-family: "Furore";
+    font-weight: 400;
+    z-index: 0;
+    position: relative;
 }
 
 .people_wrap {
-  min-height: 650px;
-  position: absolute;
-  z-index: 2;
-  width: 100%;
-  transform: translate(3%, -9%);
-  background-image: url(img/people.png);
-  background-repeat: no-repeat;
-  max-width: 1645px;
+    min-height: 650px;
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    transform: translate(3%, -9%);
+    background-image: url(img/people.png);
+    background-repeat: no-repeat;
+    max-width: 1645px;
 }
 
 .wrap_people_text {
-  font-family: "Montserrat";
-  color: white;
-  font-size: 32px;
-  box-shadow: 11px -9px 43px 0px #e0e0e033 inset;
-  border-radius: 20px;
-  backdrop-filter: blur(40px);
-  padding: 54px 225px;
-  text-align: center;
-  z-index: 3;
-  position: absolute;
-  top: 820px;
-  max-width: 1720px;
+    font-family: "Montserrat";
+    color: white;
+    font-size: 32px;
+    box-shadow: 11px -9px 43px 0px #e0e0e033 inset;
+    border-radius: 20px;
+    backdrop-filter: blur(40px);
+    padding: 54px 225px;
+    text-align: center;
+    z-index: 3;
+    position: absolute;
+    top: 820px;
+    max-width: 1720px;
 }
 
 /* Диалоговое Ита */
 
 .dialog_wrap {
-  margin-top: 41%;
-  display: flex;
-  justify-content: center;
-  position: relative;
+    margin-top: 41%;
+    display: flex;
+    justify-content: center;
+    position: relative;
 }
 
 .dialog_cloud {
-  padding-top: 4%;
+    padding-top: 4%;
+    position: relative;
 }
 
 .dialog_wrap_text {
-  font-size: 24px;
-  font-family: "BadComic";
+    font-size: 24px;
+    font-family: "BadComic";
+    position: absolute;
 }
 
 .dialog_wrap_text_top {
-  position: absolute;
-  max-width: 700px;
-  bottom: -13%;
-  left: 39%;
+    max-width: 700px;
+    bottom: -13%;
+    left: 39%;
 }
 
 .dialog_wrap_text_bottom {
-  position: absolute;
-  max-width: 700px;
-  bottom: -23%;
-  left: 52%;
+    max-width: 700px;
+    bottom: -23%;
+    left: 52%;
 }
 
 /* Ита: уже видели..? */
 
 .question_ita_wrap {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .question_ita_text {
-  font-size: 28px;
-  font-family: "Montserrat";
-  color: white;
-  box-shadow: 11px -9px 43px 0px #e0e0e033 inset;
-  border-radius: 20px;
-  backdrop-filter: blur(10px);
-  padding: 53px 60px;
-  max-width: 1360px;
+    font-size: 28px;
+    font-family: "Montserrat";
+    color: white;
+    box-shadow: 11px -9px 43px 0px #e0e0e033 inset;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    padding: 53px 60px;
+    max-width: 1360px;
 }
 
 .question_ita_text_top {
-  padding-bottom: 40px;
+    padding-bottom: 40px;
 }
 
 .background_city {
-  background-image: url(img/city.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+    background-image: url(img/city.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 /* Зарегистрируйся, чтобы начать игру */
 
 .registration_index_wrap {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .registration_index {
-  font-size: 48px;
-  font-family: "Furore";
-  color: white;
-  padding: 75px 0px;
+    font-size: 48px;
+    font-family: "Furore";
+    color: white;
+    padding: 75px 0px;
 }
 
 .start_game {
-  color: #8e24aa;
+    color: #8e24aa;
+}
+
+/* ----------------------------------------------- НАШИ ПАРТНЕРЫ---------------------------------------*/
+.section_partners {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.partners_title {
+    font-size: 48px;
+    font-family: "Furore";
+    color: white;
+    padding: 75px 0px;
+    text-align: center;
+}
+
+.partners_subtitle {
+    color: #8e24aa;
+}
+.partners__image{
+    display: flex;
+    justify-content: space-around;
+    max-width: 1430px;
+}
+.part__image_item{
+    width: 100%;
+    padding: 0 40px;
+}
+
+/*-------------------------------------------------- MEDIA --------------------------------------------*/
+
+@media (max-width: 1400px) {
+    .title_search {
+        font-size: 110px;
+    }
+
+    .people_wrap {
+        min-height: 650px;
+        position: absolute;
+        z-index: 2;
+        width: 90vW;
+        transform: translate(5%, -6%);
+        background-image: url(img/people.png);
+        background-repeat: no-repeat;
+        max-width: 1645px;
+        background-size: contain;
+    }
+
+    .wrap_people_text {
+        top: 363px;
+        position: relative;
+    }
+
+    .dialog_wrap {
+        margin-top: 33%;
+    }
+.dialog_wrap_text{
+    position: relative;
+}
+    .dialog_wrap_text_top {
+        text-align: center;
+        max-width: 71%;
+        position: absolute;
+        left: 8%;
+        top: 43px;
+        font-size: 20px;
+    }
+
+    .dialog_wrap_text_bottom {
+        text-align: center;
+        width: 50%;
+        position: absolute;
+        left: 22rem;
+        bottom: -16rem;
+        font-size: 20px;
+    }
+    .dialog_cloud {
+        padding-top: 4%;
+        position: relative;
+    }
 }
