@@ -221,9 +221,9 @@
 
     <!-- Футер -->
     <footer>
-      <?php
+      <!-- <?php
     include_once 'components/footer.php';
-    ?>
+    ?>-->
     </footer>
     <script type="text/javascript" src="js/faq.js"></script>
     <script type="text/javascript" src="js/script-faq.js"></script>

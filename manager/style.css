@@ -2,8 +2,8 @@
 
 main {
   background: url("img/background/bg_top_left.png") no-repeat 304% 2%,
-  url("img/background/bg_top_ellipse_right.png") no-repeat 100% 13%,
-  url("img/background/bg_top_right.png") no-repeat -286% 28%;
+    url("img/background/bg_top_ellipse_right.png") no-repeat 100% 13%,
+    url("img/background/bg_top_right.png") no-repeat -286% 28%;
 }
 
 /* хедер */
@@ -148,14 +148,18 @@ main {
   left: 15%;
 }
 
-.oleg_img_wrap {  
+.oleg_img_wrap {
   position: absolute;
-  right: 5px;
+  right: 0%;
   top: -48px;
 }
 
 .oleg_svg {
   backdrop-filter: blur(12px);
+  width: 94vw;
+  position: relative;
+  top: 1px;
+  left: -4%;
 }
 
 /* Что делает менеджер? */
