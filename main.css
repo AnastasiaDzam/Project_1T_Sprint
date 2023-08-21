@@ -84,7 +84,6 @@ main {
 
 .btn_tg,
 .btn_lk {
-    border: none;
     padding: 16px 32px;
     border-radius: 10px;
     color: white;
@@ -99,9 +98,6 @@ main {
     font-family: "Play";
     font-size: 24px;
     cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 /* Найди себя в айти */
@@ -159,19 +155,24 @@ main {
 .dialog_wrap_text {
     font-size: 24px;
     font-family: "BadComic";
-    position: absolute;
+    position: relative;
+
 }
 
 .dialog_wrap_text_top {
-    max-width: 700px;
-    bottom: -13%;
-    left: 39%;
+    text-align: center;
+    max-width: 71%;
+    position: absolute;
+    left: 8%;
+    top: 51px;
 }
 
 .dialog_wrap_text_bottom {
-    max-width: 700px;
-    bottom: -23%;
-    left: 52%;
+    text-align: center;
+    width: 50%;
+    position: absolute;
+    left: 27rem;
+    bottom: -18rem;
 }
 
 /* Ита: уже видели..? */
@@ -228,6 +229,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 100px;
 
 }
 
