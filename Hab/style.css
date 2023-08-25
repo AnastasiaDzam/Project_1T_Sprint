@@ -34,6 +34,7 @@
 
 body {
     background: #000000;
+    overflow-x: hidden;
 }
 
 .img_width {
@@ -230,7 +231,7 @@ main {
 }
 
 .circle-after-long:after {
-    width: 900%;
+    width: 830%;
 }
 
 .circle-back {
@@ -243,7 +244,7 @@ main {
     right: 212%;
     content: "";
     height: 2px;
-    width: 900%;
+    width: 830%;
     background-image: radial-gradient(#9600ff 40%, transparent 50%);
     background-size: 17px 10px;
     background-repeat: repeat-x;
