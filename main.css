@@ -444,30 +444,50 @@ main {
 }
 .flipster__button {
 	bottom:0;
+<<<<<<< HEAD
 	height:95px;;
 	margin:0;
 	top:inherit;
 	width:30px;
 	background-repeat: no-repeat;
+=======
+	height:30px;
+	margin:0;
+	top:inherit;
+	width:30px;
+>>>>>>> 1f58d371a411a351b2b6f2edabb404002101311c
 }
 .flipster__button svg {
 	display:none;
 }
 .flipster__button--prev {
 	background-image:url("./img/left.svg");
+<<<<<<< HEAD
 	left:35%;;
+=======
+	left:50%;
+>>>>>>> 1f58d371a411a351b2b6f2edabb404002101311c
 	-webkit-transform:translate(-100px);
 	transform:translate(-100px);
 }
 .flipster__button--next {
 	background-image:url("./img/right.svg");
+<<<<<<< HEAD
 	right:65%;;
+=======
+	right:50%;
+>>>>>>> 1f58d371a411a351b2b6f2edabb404002101311c
 	-webkit-transform:translate(100px);
 	transform:translate(100px);
 }
 .flipster__nav {
+<<<<<<< HEAD
 	bottom:7px;
 	left:35%;
+=======
+	bottom:-68px;
+	left:50%;
+>>>>>>> 1f58d371a411a351b2b6f2edabb404002101311c
 	position:absolute;
 	-webkit-transform:translate(-50%);
 	transform:translate(-50%);

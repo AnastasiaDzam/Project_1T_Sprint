@@ -480,3 +480,56 @@ body{
   text-align: center;
   padding-bottom: 140px;
 }
+
+/* Видео */
+
+.video-text {
+    color: #FFF;
+    text-align: center;
+    font-family: Furore;
+    font-size: 48px;
+    font-weight: 400;
+}
+
+.video-text-small {
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32px;
+    padding: 24px 0 43px 0;
+}
+
+.video {
+    display: flex;
+    width: 1140px;
+    height: 561px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 6px;
+    border: 1px dashed #ADB5CD;
+    background: #391D46;
+}
+
+.play-sign {
+    color: #DCDCF0;
+    display: flex !important;
+    position: absolute;
+   
+}
+
+.container-video {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 0 80px 0;
+}
+
+.all-play-sign {
+    align-items: center;
+    display: flex !important;
+    justify-content: center;
+}
