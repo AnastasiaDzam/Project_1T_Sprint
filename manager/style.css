@@ -4,12 +4,11 @@ main {
   background: url("img/background/bg_top_left.png") no-repeat 304% 2%,
     url("img/background/bg_top_ellipse_right.png") no-repeat 100% 13%,
     url("img/background/bg_top_right.png") no-repeat -286% 28%;
+    counter-reset: count;
 }
-
-body {
+body{
   counter-reset: section;
 }
-
 /* хедер */
 .background_manager {
   background-image: url(img/manager.png);
@@ -209,6 +208,7 @@ body {
   margin-bottom: 50px;
   display: flex;
   align-items: center;
+ 
 }
 
 .what_doing_item_span {
@@ -315,6 +315,7 @@ body {
 }
 
 .question_answer_count::before {
+  counter-increment: count;
   content: counter(count, decimal-leading-zero);
   margin-right: 15px;
   color: #9600ff;
