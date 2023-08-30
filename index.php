@@ -4,10 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Вступительная</title>
-    <link rel="stylesheet" href="main.css" />
-    <link rel="stylesheet" href="animation.css" />
-    <link rel="stylesheet" href="css/style-faq.css" />
+    <link rel="stylesheet" href="./animation.css" />
+    <link rel="stylesheet" href="./css/style-faq.css" />
     <link rel="stylesheet" href="./components/footer.css" />
+    <link rel="stylesheet" href="./css/flipster.min.css" />
+    <link rel="stylesheet" href="./main.css" />
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.flipster.min.js"></script>
   </head>
 
   <body>
@@ -62,7 +65,174 @@
         </div>
 
         <!-- Слайдер с профессиями  -->
-        <div></div>
+        <section class="promo">
+          <div class="container promo__container">
+            <div class="my-flipster">
+              <ul>
+                <li>
+                  <section class="promo__item promo__item_manage">
+                    <section class="promo__info">
+                      <section class="promo__text">
+                        <section class="promo__title">
+                          <span>Менеджер</span> IT-проектов
+                        </section>
+                        <section class="promo__info">
+                          Как менеджер, вы будете руководить командой и
+                          управлять проектами. Если вы организованный, можете
+                          работать в напряженных ситуациях и хорошо понимаете,
+                          как мотивировать своих коллег, то это может быть для
+                          вас.
+                        </section>
+                      </section>
+                    </section>
+                    <img
+                      src="img/slider/promo/mobile/manager.svg"
+                      alt=""
+                      class="promo__img_mobile"
+                    />
+                    <section class="promo__button">
+                      <!-- <a href="/c/manage.html" class="button">Подробнее</a> -->
+                    </section>
+                  </section>
+                </li>
+
+                <li>
+                  <section class="promo__item promo__item_design">
+                    <section class="promo__info">
+                      <section class="promo__text">
+                        <section class="promo__title">
+                          UX / UI<span>Дизайнер</span>
+                        </section>
+                        <section class="promo__info">
+                          Дизайнер занимается созданием креативных и
+                          привлекательных визуальных образов. Если вы творческая
+                          натура с чувством стиля и умеете работать с
+                          графическими программами, то эта профессия может быть
+                          для вас.
+                        </section>
+                      </section>
+                    </section>
+                    <img
+                      src="img/slider/promo/mobile/designer.svg"
+                      alt=""
+                      class="promo__img_mobile"
+                    />
+                    <section class="promo__button">
+                      <!-- <a href="/design" class="button">Подробнее</a> -->
+                    </section>
+                  </section>
+                </li>
+                <li>
+                  <section class="promo__item promo__item_analyze">
+                    <section class="promo__info">
+                      <section class="promo__text">
+                        <section class="promo__title">
+                          Системный <span>аналитик</span>
+                        </section>
+                        <section class="promo__info">
+                          Аналитик обычно специализируется на анализе данных.
+                          Если вы любите математику, умеете работать с таблицами
+                          и графиками, анализировать результаты и делать выводы,
+                          то этот выбор может быть для вас.
+                        </section>
+                      </section>
+                    </section>
+                    <img
+                      src="img/slider/promo/mobile/analyst.svg"
+                      alt=""
+                      class="promo__img_mobile"
+                    />
+                    <section class="promo__button">
+                      <!-- <a href="/analyze" class="button">Подробнее</a> -->
+                    </section>
+                  </section>
+                </li>
+                <li>
+                  <section class="promo__item promo__item_code">
+                    <section class="promo__info">
+                      <section class="promo__text">
+                        <section class="promo__title promo__title_web">
+                          Web <span>разработчик</span>
+                        </section>
+                        <section class="promo__info">
+                          Разработчики создают программное обеспечение для
+                          компьютеров и мобильных устройств. Пишет код,
+                          тестирует его и оценивает результаты.Если у вас есть
+                          базовые знания в программировании, то сможете создать
+                          множество своих интересных проектов или поддержать уже
+                          существующие.
+                        </section>
+                      </section>
+                    </section>
+                    <img
+                      src="img/slider/promo/mobile/developer.svg"
+                      alt=""
+                      class="promo__img_mobile"
+                    />
+                    <section class="promo__button">
+                      <!-- <a href="/code" class="button">Подробнее</a> -->
+                    </section>
+                  </section>
+                </li>
+                <li>
+                  <section class="promo__item promo__item_market">
+                    <section class="promo__info">
+                      <section class="promo__text">
+                        <section class="promo__title">
+                          Digital <span>маркетолог</span>
+                        </section>
+                        <section class="promo__info">
+                          Маркетолог занимается продвижением цифровых платформ,
+                          работает с социальными сетями, рекламой и услугами
+                          рынка. Если вы легко общаетесь с людьми, умеете
+                          анализировать рынок и создавать рекламные кампании, то
+                          можете остановить свой выбор на этой профессии.
+                        </section>
+                      </section>
+                    </section>
+                    <img
+                      src="img/slider/promo/mobile/marketologist.svg"
+                      alt=""
+                      class="promo__img_mobile"
+                    />
+                    <section class="promo__button">
+                      <!-- <a href="/market" class="button">Подробнее</a> -->
+                    </section>
+                  </section>
+                </li>
+                <li>
+                  <section class="promo__item promo__item_aks">
+                    <section class="promo__info">
+                      <section class="promo__text">
+                        <section class="promo__title promo__title_it">
+                          <span>Тестировщик</span>
+                          информационных систем
+                        </section>
+                        <section class="promo__info">
+                          <p>
+                            Тестировщик занимается проверкой качества продукции,
+                            работает с кейсами и проводит финальные
+                            тестирования. Если у вас есть высокая внимательность
+                            к деталям, умение анализировать и находить ошибки,
+                            то этот выбор может быть для вас.
+                          </p>
+                        </section>
+                      </section>
+                    </section>
+                    <img
+                      src="img/slider/promo/mobile/tester.svg"
+                      alt=""
+                      class="promo__img_mobile"
+                    />
+                    <section class="promo__button">
+                      <!-- <a href="/test" class="button">Подробнее</a> -->
+                    </section>
+                  </section>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
 
         <!-- Ита: уже видели..? -->
         <section class="background_city">
@@ -90,46 +260,22 @@
         <section class="section_wrap">
           <div class="contain">
             <div>
-              <img
-                class="img_width"
-                src="img/index_comics_block_1.png"
-                alt="comics"
-              />
+              <img class="img_width" src="img/Block_1.svg" alt="comics" />
             </div>
             <div>
-              <img
-                class="img_width"
-                src="img/index_comics_block_2.png"
-                alt="comics"
-              />
+              <img class="img_width" src="img/Block_2.svg" alt="comics" />
             </div>
             <div>
-              <img
-                class="img_width"
-                src="img/index_comics_block_3.png"
-                alt="comics"
-              />
+              <img class="img_width" src="img/Block_3.svg" alt="comics" />
             </div>
             <div>
-              <img
-                class="img_width"
-                src="img/index_comics_block_4.png"
-                alt="comics"
-              />
+              <img class="img_width" src="img/Block_4.svg" alt="comics" />
             </div>
             <div>
-              <img
-                class="img_width"
-                src="img/index_comics_block_5.png"
-                alt="comics"
-              />
+              <img class="img_width" src="img/Block_5.svg" alt="comics" />
             </div>
             <div class="margin_b">
-              <img
-                class="img_width"
-                src="img/index_comics_block_6.png"
-                alt="comics"
-              />
+              <img class="img_width" src="img/Block_6.svg" alt="comics" />
             </div>
           </div>
         </section>
@@ -221,10 +367,12 @@
 
     <!-- Футер -->
     <footer>
-      <!-- <?php
-    include_once 'components/footer.php';
-    ?>-->
+      <?php
+  include_once 'components/footer.php';
+  ?>
     </footer>
+    <script type="text/javascript" src="js/jquery.flipster.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
     <script type="text/javascript" src="js/faq.js"></script>
     <script type="text/javascript" src="js/script-faq.js"></script>
   </body>
