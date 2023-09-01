@@ -10,10 +10,27 @@ $('.my-flipster').flipster({
 $('body').on('click', 'a.flipster__nav__link', function (e) {
     e.preventDefault();
 });
+let img = document.querySelector('.ita_img_cloud_big')
+
 if (innerWidth < 1000) {
-    let img = document.querySelector('.ita_img_cloud_big')
     img.src = './img/cloud_ita_big.svg'
+    $('#comics_block').css('display', 'none')
+    $('#adaptiv_comics_block').css('display', 'block')
 } else {
+    console.log('else')
     img.src = './img/img/cloud.svg'
+    $('#comics_block').css('display', 'block')
+    $('#adaptiv_comics_block').css('display', 'block')
 }
+let counterShow = 1
+
+$(".comics_btn_add").click((event) => {
+    $('#authors-list > .comics_hide').first().show().removeClass('comics_hide');
+    counterShow++
+    console.log(counterShow)
+    if (counterShow >= 6) {
+        $('.comics_btn').hide()
+    }
+})
+
 
