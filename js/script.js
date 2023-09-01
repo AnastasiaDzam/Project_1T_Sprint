@@ -18,9 +18,9 @@ if (innerWidth < 1000) {
     $('#adaptiv_comics_block').css('display', 'block')
 } else {
     console.log('else')
-    img.src = './img/img/cloud.svg'
+    img.src = './img/cloud.svg'
     $('#comics_block').css('display', 'block')
-    $('#adaptiv_comics_block').css('display', 'block')
+    $('#adaptiv_comics_block').css('display', 'none')
 }
 let counterShow = 1
 
