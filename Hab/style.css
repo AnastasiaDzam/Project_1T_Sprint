@@ -440,6 +440,13 @@ main {
   align-items: center;
   margin-bottom: 40px;
   max-width: 560px;
+  position: absolute;
+  left: 47%;
+  bottom: 28%;
+}
+
+.dialog_ita {
+  position: relative;
 }
 
 .img_warning {
@@ -495,4 +502,97 @@ main {
 
 .ita_final_dialog {
   margin-top: 18% !important;
+}
+
+/* -------------  Media  --------------- */
+
+@media (max-width: 900px) {
+  .header_wrap {
+    padding: 36px 10px !important;
+  }
+
+  .header_logo {
+    width: 23%;
+  }
+
+  .icon_logo_header {
+    width: 19px;
+    height: 19px;
+  }
+
+  .btn_hub_name {
+    margin-right: 10px;
+  }
+
+  .btn_tg {
+    padding: 8px 16px !important;
+  }
+}
+
+@media (max-width: 500px) {
+  .Progress-card-name {
+    font-size: 18px;
+  }
+
+  .profession-text {
+    font-size: 12px;
+  }
+
+  .Progress-block {
+    display: block;
+  }
+
+  .last-cards {
+    display: block;
+  }
+
+  .card {
+    width: 120px;
+    height: 152px;
+  }
+
+  .img_people {
+    height: 113px;
+    width: 86px;
+  }
+
+  .triangle-down {
+    width: 27px;
+  }
+
+  .profession {
+    font-size: 14px;
+  }
+
+  .click {
+    font-size: 80%;
+  }
+
+  .triangle-down {
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-top: 32px solid #340ba4;
+    border-radius: 7px;
+    bottom: -37px;
+    left: 25%;
+  }
+
+  .profession-lock {
+    padding: 30% 0 30% 0;
+  }
+
+  .cloud_hub,
+  .hub_ita_final_text {
+    font-size: 12px;
+  }
+
+  .dialog_cloud_star__link {
+    font-size: 10px;
+  }
+
+  .check_hub {
+    font-size: 12px;
+    position: relative;
+    left: 0;
+  }
 }

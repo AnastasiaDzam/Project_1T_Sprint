@@ -19,14 +19,18 @@
     <div class="hub_home">
       <header class="section_wrap">
         <div class="header_wrap">
-          <a href="#"
-            ><img class="img_width" src="../img/logo.svg" alt="logo"
-          /></a>
+          <div class="header_logo">
+            <a href="#"
+              ><img class="img_width" src="../img/logo.svg" alt="logo"
+            /></a>
+          </div>
+
           <div class="header_hub_group_btn">
             <button class="btn_tg btn_hover_gradient btn_hub_name">
               Андрей Петров
               <span>
                 <svg
+                  class="icon_logo_header"
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
                   height="24"
@@ -103,24 +107,23 @@
 
         <!--Карта прогресса-->
         <section class="hub_progress">
-
           <div class="Progress-main">
             <!--Модальное окно для карты прогресса-->
             <div class="modal_hub" id="modalHub">
-            <span
-                    class="material-symbols-outlined modal_close"
-                    style="display: flex; justify-content: flex-end"
-                    id="closeModalHub"
-            >close</span
-            >
+              <span
+                class="material-symbols-outlined modal_close"
+                style="display: flex; justify-content: flex-end"
+                id="closeModalHub"
+                >close</span
+              >
               <div class="modal_hub_wrap">
                 <div class="modal_left_column">
                   <div class="modal_left_column_double_check">
                     <div class="icon_modal_block">
                       <img
-                              src="img/icon_success.svg"
-                              class="modal_icon"
-                              alt="check"
+                        src="img/icon_success.svg"
+                        class="modal_icon"
+                        alt="check"
                       />
                     </div>
                     <p class="modal_text text_progress">
@@ -130,9 +133,9 @@
                   <div class="modal_left_column_hourglass">
                     <div class="icon_modal_block">
                       <img
-                              src="img/icon_wait.svg"
-                              class="modal_icon"
-                              alt="hourglass"
+                        src="img/icon_wait.svg"
+                        class="modal_icon"
+                        alt="hourglass"
                       />
                     </div>
                     <p class="modal_text text_progress">
@@ -145,9 +148,9 @@
                   <div class="modal_right_column_check">
                     <div class="icon_modal_block">
                       <img
-                              src="img/iconload.svg"
-                              class="modal_icon"
-                              alt="check"
+                        src="img/iconload.svg"
+                        class="modal_icon"
+                        alt="check"
                       />
                     </div>
                     <p class="modal_text text_progress">
@@ -158,9 +161,9 @@
                   <div class="modal_right_column_elipse">
                     <div class="icon_modal_block">
                       <img
-                              src="img/elipse_icon.svg"
-                              class="modal_icon"
-                              alt="Ellipse"
+                        src="img/elipse_icon.svg"
+                        class="modal_icon"
+                        alt="Ellipse"
                       />
                     </div>
                     <p class="modal_text text_progress">Квест не пройден</p>
@@ -502,7 +505,7 @@
         <!--Ита финальная-->
 
         <section class="section_wrap">
-          <div class="contain">
+          <div class="contain dialog_ita">
             <div class="dialog_wrap ita_final_dialog">
               <div>
                 <img
@@ -585,16 +588,16 @@
                     </div>
                   </div>
                 </div>
-                <div class="check_hub">
-                  <img
-                    class="img_warning"
-                    src="../manager/img/warning_triangle.svg"
-                    alt="warning"
-                  />
-                  Если квест по профессии не пройден, результат по нему не
-                  рассчитывается
-                </div>
               </div>
+            </div>
+            <div class="check_hub">
+              <img
+                class="img_warning"
+                src="../manager/img/warning_triangle.svg"
+                alt="warning"
+              />
+              Если квест по профессии не пройден, результат по нему не
+              рассчитывается
             </div>
             <div class="hub_ita_final">
               <p class="hub_ita_final_text">
