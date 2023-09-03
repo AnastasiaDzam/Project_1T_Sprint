@@ -1,14 +1,31 @@
 /* МЕНЕДЖЕР */
 
-main {
-  background: url("img/background/bg_top_left.png") no-repeat 304% 2%,
-    url("img/background/bg_top_ellipse_right.png") no-repeat 100% 13%,
-    url("img/background/bg_top_right.png") no-repeat -286% 28%;
+.main_manager {
+  background: url("img/background/bg_top_left.png") no-repeat left 300% top 2%,
+    url("img/background/bg_top_ellipse_right.png") no-repeat right top 10%,
+    url("img/background/bg_top_right.png") no-repeat right 420% top 23%,
+    url("img/background/3_left.svg") no-repeat left top 34%,
+    url("img/background/elli_right.svg") no-repeat right top 33%,
+    url("img/background/elli_left.svg") no-repeat left top 40%,
+    url("img/background/3_right.svg") no-repeat right top 48%,
+    url("img/background/round_left.svg") no-repeat left top 55%,
+    url("img/background/elli_right.svg") no-repeat right -48% top 65%,
+    url("img/background/blue_round_l.svg") no-repeat left top 72%,
+    url("img/background/3_bottom_r.svg") no-repeat right bottom 10%,
+    url("img/background/round_pink_b.svg") no-repeat left bottom 8%,
+    url("img/background/elli_left.svg") no-repeat left bottom,
+    url("img/background/round_bl_bottom.svg") no-repeat right bottom 2%;
   counter-reset: count;
 }
+
 body {
   counter-reset: section;
 }
+
+.home {
+  background: url("img/background/ell_top.svg") no-repeat right 28% top;
+}
+
 /* хедер */
 .background_manager {
   background-image: url(img/manager.png);
@@ -31,10 +48,8 @@ body {
   padding: 15px 22px;
   color: white;
   border-radius: 5px;
-  background: var(
-    --gradient-pink-dark-purple-90,
-    linear-gradient(90deg, #c800c8 0%, #9600ff 100%, #9600ff 100%)
-  );
+  background: var(--gradient-pink-dark-purple-90,
+      linear-gradient(90deg, #c800c8 0%, #9600ff 100%, #9600ff 100%));
   box-shadow: 0px 0px 40px 0px rgba(240, 0, 250, 0.5),
     0px 0px 20px 0px rgba(0, 25, 240, 0.5);
   font-family: "Play";
@@ -66,11 +81,9 @@ body {
 .earlier {
   border-radius: 20px;
   padding: 8px 20px;
-  background: linear-gradient(
-    134deg,
-    rgba(34, 19, 56, 0.48) 48.02%,
-    rgba(57, 29, 70, 0.45) 100%
-  );
+  background: linear-gradient(134deg,
+      rgba(34, 19, 56, 0.48) 48.02%,
+      rgba(57, 29, 70, 0.45) 100%);
   max-width: 309px;
   margin-bottom: 70px;
   display: flex;
@@ -148,11 +161,9 @@ body {
   position: absolute;
   left: 23%;
   bottom: -122px;
-  background: linear-gradient(
-      135deg,
+  background: linear-gradient(135deg,
       rgba(255, 255, 255, 0.2) 0%,
-      rgba(255, 255, 255, 0) 100%
-    ),
+      rgba(255, 255, 255, 0) 100%),
     linear-gradient(292deg, rgba(0, 120, 255, 0.2) 0%, rgba(10, 0, 25, 0) 100%),
     linear-gradient(0deg, #0a0019, #0a0019),
     linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05));
@@ -186,9 +197,11 @@ body {
   color: #fff;
   padding: 50px 176px 100px 100px;
 }
+
 #modal {
   display: none;
 }
+
 /* Менеджер Олег */
 
 .oleg_wrap {
@@ -314,11 +327,9 @@ body {
 
 .question_answer_wrap {
   border-radius: 20px;
-  background: var(
-    --glass-light-blue,
-    linear-gradient(315deg, rgba(0, 120, 255, 0.2) 0%, rgba(10, 0, 25, 0) 100%),
-    rgba(255, 255, 255, 0.05)
-  );
+  background: var(--glass-light-blue,
+      linear-gradient(315deg, rgba(0, 120, 255, 0.2) 0%, rgba(10, 0, 25, 0) 100%),
+      rgba(255, 255, 255, 0.05));
   padding: 28px 75px;
   max-width: 850px;
   margin-bottom: 16px;
@@ -346,7 +357,7 @@ body {
   background: url(../img/question_circle_external.png) 0 0 no-repeat;
 }
 
-.question_answer_block input[type="radio"]:checked + label:before {
+.question_answer_block input[type="radio"]:checked+label:before {
   background: url(../img/radioButton.png) 0 0 no-repeat;
 }
 
@@ -390,10 +401,8 @@ body {
   outline: none;
   font-size: 16px;
   cursor: pointer;
-  background: var(
-    --gradient-purple-blue-90,
-    linear-gradient(90deg, #9600ff 0%, #0019ff 100%)
-  );
+  background: var(--gradient-purple-blue-90,
+      linear-gradient(90deg, #9600ff 0%, #0019ff 100%));
   display: flex;
   margin: auto;
 }
@@ -520,10 +529,8 @@ body {
 
 .end_next_for {
   border-radius: 5px;
-  background: var(
-    --gradient-pink-dark-purple-90,
-    linear-gradient(90deg, #c800c8 0%, #9600ff 100%, #9600ff 100%)
-  );
+  background: var(--gradient-pink-dark-purple-90,
+      linear-gradient(90deg, #c800c8 0%, #9600ff 100%, #9600ff 100%));
   box-shadow: 0px 0px 40px 0px rgba(240, 0, 250, 0.5),
     0px 0px 20px 0px rgba(0, 25, 240, 0.5);
   backdrop-filter: blur(25px);
