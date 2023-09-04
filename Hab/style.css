@@ -50,13 +50,20 @@ body {
     margin: auto;
 }
 
-main {
-    background: url("../img/background/bg-top-right.png") no-repeat 100% 8%,
-    url("../img/background/bg-top-center.png") no-repeat 100% 8%;
-}
 
 .hub_home {
-    background: #0a0019;
+    min-width: 320px;
+    background: url(img/background_hub/Ellipse_bottom_hub.svg) no-repeat right bottom 15%,
+    url(img/background_hub/bg_bottom_right.svg) no-repeat left bottom 5%,
+    url(img/background_hub/2_hub.png) no-repeat left 30% bottom 20%,
+    url(img/background_hub/2_hub.png) no-repeat right 30% top 70%,
+    url(img/background_hub/2_hub.png) no-repeat right top 50%,
+    url(img/background_hub/2_hub.png) no-repeat left top 50%,
+    url(img/background_hub/2_hub.png) no-repeat center top 35%,
+    url(../img/background/bg-top-center.png) no-repeat right top 20%,
+    url(../img/background/2blue.svg) no-repeat center top 15%,
+    url(img/background_hub/Ellipse_top_hub.png) no-repeat right top 5%,
+    #0a0019;
 }
 
 /*----------------------------------------------------- HUB header ---------------------------------------*/
@@ -623,5 +630,16 @@ main {
         font-size: 12px;
         position: relative;
         left: 0;
+    }
+}
+
+@media (max-width: 400px) {
+    .check_hub {
+        padding: 10px 6px;
+    }
+
+    .img_warning {
+        padding-right: 16px;
+        padding-left: 16px;
     }
 }
