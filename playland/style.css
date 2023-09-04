@@ -127,9 +127,6 @@ h1 {
 
 /* Карта товара */
 
-.product-information {
-
-}
 
 .order-text {
     color: var(--1, #2E363E);
@@ -299,7 +296,7 @@ li {
     padding: 20px;
     border-radius: 19px;
     width: 52%;
-    margin: -170px 506px;
+    margin: -150px 0 0 42%;
 }
 
 .bonus-text-small {
@@ -338,7 +335,7 @@ li {
     padding-top: 240px;
 }
 
-.Icon-wrap {
+.icon-wrap {
     display: flex;
     flex-wrap: wrap;
 }
