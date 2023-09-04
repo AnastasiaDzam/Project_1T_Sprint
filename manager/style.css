@@ -1,14 +1,31 @@
 /* МЕНЕДЖЕР */
 
-main {
-  background: url("img/background/bg_top_left.png") no-repeat 304% 2%,
-    url("img/background/bg_top_ellipse_right.png") no-repeat 100% 13%,
-    url("img/background/bg_top_right.png") no-repeat -286% 28%;
-    counter-reset: count;
+.main_manager {
+  background: url("img/background/bg_top_left.png") no-repeat left 300% top 2%,
+    url("img/background/bg_top_ellipse_right.png") no-repeat right top 10%,
+    url("img/background/bg_top_right.png") no-repeat right 420% top 23%,
+    url("img/background/3_left.svg") no-repeat left top 34%,
+    url("img/background/elli_right.svg") no-repeat right top 33%,
+    url("img/background/elli_left.svg") no-repeat left top 40%,
+    url("img/background/3_right.svg") no-repeat right top 48%,
+    url("img/background/round_left.svg") no-repeat left top 55%,
+    url("img/background/elli_right.svg") no-repeat right -48% top 65%,
+    url("img/background/blue_round_l.svg") no-repeat left top 72%,
+    url("img/background/3_bottom_r.svg") no-repeat right bottom 10%,
+    url("img/background/round_pink_b.svg") no-repeat left bottom 8%,
+    url("img/background/elli_left.svg") no-repeat left bottom,
+    url("img/background/round_bl_bottom.svg") no-repeat right bottom 2%;
+  counter-reset: count;
 }
-body{
+
+body {
   counter-reset: section;
 }
+
+.home {
+  background: url("img/background/ell_top.svg") no-repeat right 28% top;
+}
+
 /* хедер */
 .background_manager {
   background-image: url(img/manager.png);
@@ -126,12 +143,73 @@ body{
   cursor: pointer;
 }
 
+.material_help:hover {
+  color: #c800c8;
+}
+
 .arrow_background {
   background-image: url(img/background/triangle.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position-x: 235px;
   background-position-y: 60px;
+}
+
+/* Модальное окно ранее в комиксе */
+.section_modal {
+  position: relative;
+  z-index: 10;
+  margin: 0 auto;
+}
+
+.modal_wrap {
+  max-width: 868px;
+  border: 1px solid;
+  border-radius: 20px;
+  position: absolute;
+  left: 23%;
+  bottom: -122px;
+  background: linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.2) 0%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    linear-gradient(292deg, rgba(0, 120, 255, 0.2) 0%, rgba(10, 0, 25, 0) 100%),
+    linear-gradient(0deg, #0a0019, #0a0019),
+    linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05));
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal_exit {
+  color: #ffffff;
+  cursor: pointer;
+  position: absolute;
+  right: 5%;
+  top: 5%;
+}
+
+.modal-title {
+  color: #fff;
+  font-family: "Manga";
+  font-size: 20px;
+  padding-left: 100px;
+  padding-top: 30px;
+}
+
+.modal-text {
+  font-family: "Play";
+  font-size: 32px;
+  font-weight: 400;
+  color: #fff;
+  padding: 50px 176px 100px 100px;
+}
+
+#modal {
+  display: none;
 }
 
 /* Менеджер Олег */
@@ -208,7 +286,6 @@ body{
   margin-bottom: 50px;
   display: flex;
   align-items: center;
- 
 }
 
 .what_doing_item_span {
@@ -485,54 +562,53 @@ body{
 /* Видео */
 
 .video-text {
-    color: #FFF;
-    text-align: center;
-    font-family: Furore;
-    font-size: 48px;
-    font-weight: 400;
+  color: #fff;
+  text-align: center;
+  font-family: Furore;
+  font-size: 48px;
+  font-weight: 400;
 }
 
 .video-text-small {
-    color: #FFF;
-    text-align: center;
-    font-family: Montserrat;
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 32px;
-    padding: 24px 0 43px 0;
+  color: #fff;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+  padding: 24px 0 43px 0;
 }
 
 .video {
-    display: flex;
-    width: 1140px;
-    height: 561px;
-    justify-content: center;
-    align-items: center;
-    flex-shrink: 0;
-    border-radius: 6px;
-    border: 1px dashed #ADB5CD;
-    background: #391D46;
+  display: flex;
+  width: 1140px;
+  height: 561px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 6px;
+  border: 1px dashed #adb5cd;
+  background: #391d46;
 }
 
 .play-sign {
-    color: #DCDCF0;
-    display: flex !important;
-    position: absolute;
-   
+  color: #dcdcf0;
+  display: flex !important;
+  position: absolute;
 }
 
 .container-video {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 0 0 80px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0 0 80px 0;
 }
 
 .all-play-sign {
-    align-items: center;
-    display: flex !important;
-    justify-content: center;
+  align-items: center;
+  display: flex !important;
+  justify-content: center;
 }
 
 .correct{

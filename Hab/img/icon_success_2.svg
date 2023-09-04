@@ -1,0 +1,11 @@
+<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="15" cy="15" r="15" fill="url(#paint0_linear_2825_3817)"/>
+<path d="M20 9L9 20L4 15" stroke="#00350F" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M25.5 9L14.5 20L13 18.5" stroke="#00350F" stroke-linecap="round" stroke-linejoin="round"/>
+<defs>
+<linearGradient id="paint0_linear_2825_3817" x1="0" y1="0" x2="30" y2="0" gradientUnits="userSpaceOnUse">
+<stop stop-color="#28F631"/>
+<stop offset="0.953125" stop-color="#9EE800"/>
+</linearGradient>
+</defs>
+</svg>
