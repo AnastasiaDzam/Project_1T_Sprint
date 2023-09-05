@@ -14,8 +14,8 @@ document.addEventListener('DOMContentLoaded', () => {
 let correctAnswers = {
     radio1: '2',
     radio2: '4',
-    radio3: '8',
     radio4: '10',
+    radio3: '8',
     radio5: '13',
     radio6: '18'
 };
@@ -44,7 +44,6 @@ function check(helpId, btnId, qId) {
                     radio.disabled = true;
 
                 })
-
                 return
             } else if (correct_answer !== correctAnswers[question]) {
                 console.log('false')
