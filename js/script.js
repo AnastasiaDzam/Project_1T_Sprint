@@ -6,6 +6,7 @@ $('.my-flipster').flipster({
     buttons: true,
     loop: true,
     scrollwheel: false,
+    onItemSwitch: true
 });
 $('body').on('click', 'a.flipster__nav__link', function (e) {
     e.preventDefault();

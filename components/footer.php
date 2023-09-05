@@ -3,13 +3,13 @@
         <div class="container">
             <div class="footer__row">
                 <div class="footer__item footer__item_links">
-                    <a href="/" class="footer__logo"><img src="img/logo-new.svg" alt="1T Sprint"></a>
+                    <a href="/" class="footer__logo"><img src="../img/logo-new.svg" alt="1T Sprint"></a>
                     <div>
                         <div class="footer__phone">
-                            <a href="tel:+79993333307"><img src="img/icons/phone.svg" alt=""> +7 (999)
+                            <a href="tel:+79993333307"><img src="../img/icons/phone.svg" alt=""> +7 (999)
                                 333-33-07</a>
                         </div>
-                        <div class="footer__email"><img src="img/icons/mail.svg" alt=""> sprint@1t.ru
+                        <div class="footer__email"><img src="../img/icons/mail.svg" alt=""> sprint@1t.ru
                         </div>
                         <div class="footer__icons">
                             <img src="img/icons/tg.svg" alt="">

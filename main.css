@@ -39,6 +39,10 @@ body {
     background-color: #0a0019;
 }
 
+.flipster--flat .flipster__item--future, .flipster--flat .flipster__item--past {
+    opacity: 1 !important;
+}
+
 .main_start {
     min-width: 320px;
     background: url(img/background/2.png) no-repeat right bottom 10%,
