@@ -65,19 +65,19 @@
                 <div class="footer__partners partners">
                     <ul class="partners__list">
                         <li class="partners__item">
-                            <img src="img/partner-1.svg" alt="логотип Цифровые профессии" style="height:34px">
+                            <img src="../img/partner-1.svg" alt="логотип Цифровые профессии" style="height:34px">
                         </li>
                         <li class="partners__item">
-                            <img src="img/partner-2.svg" alt="логотип Минцифры России">
+                            <img src="../img/partner-2.svg" alt="логотип Минцифры России">
                         </li>
                         <li class="partners__item">
-                            <img src="img/partner-3.svg" alt="логотип Цифровая экономика">
+                            <img src="../img/partner-3.svg" alt="логотип Цифровая экономика">
                         </li>
                         <li class="partners__item">
-                            <img src="img/logo20-35.svg" alt="логотип 20.35" style="height:34px">
+                            <img src="../img/logo20-35.svg" alt="логотип 20.35" style="height:34px">
                         </li>
                         <li class="partners__item">
-                            <img src="img/logo-skolkovo.svg" alt="логотип Сколково">
+                            <img src="../img/logo-skolkovo.svg" alt="логотип Сколково">
                         </li>
                     </ul>
                 </div>
