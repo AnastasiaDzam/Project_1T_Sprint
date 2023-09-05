@@ -432,6 +432,7 @@ body {
   color: #fff;
   font-family: Montserrat;
   font-size: 16px;
+  margin-bottom: 40px;
 }
 
 .warning_circle {
@@ -608,4 +609,16 @@ body {
   align-items: center;
   display: flex !important;
   justify-content: center;
+}
+
+.correct{
+  background-image: url("./manager/img/tests/Icon_correct.svg");
+}
+
+.wrong{
+background-image:url("./manager/img/tests/Icon_wrong.svg");
+}
+
+.hide{
+  display: none;
 }
