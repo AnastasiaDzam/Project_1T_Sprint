@@ -1,0 +1,121 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+@font-face {
+    src: url(../fonts/BadComic.woff2);
+    font-family: "BadComic";
+}
+
+@font-face {
+    src: url(../fonts/Furore.woff2);
+    font-family: "Furore";
+}
+
+@font-face {
+    src: url(../fonts/Montserrat.woff2);
+    font-family: "Montserrat";
+}
+
+@font-face {
+    src: url(../fonts/Play.woff2);
+    font-family: "Play";
+}
+
+body {
+    background: #0A0019;
+    color: #FFF;
+    
+}
+
+.results-section {
+    position: relative;
+    max-width: 1720px;
+    margin: 5% auto;
+}
+
+.results-section_wrap{
+    box-shadow: 11px -9px 43px 0px #e0e0e033 inset;
+    border-radius: 16px;
+    backdrop-filter: blur(40px);
+    padding: 5% 9%;
+    text-align: center;
+}
+
+.text {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 30px;
+    font-family: "Montserrat";
+}
+
+.text-result { 
+    padding-top: 50px;
+    font-family: 'Furore';
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.profession {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 3%;
+    font-family: 'Montserrat';
+    font-size: 22px;
+    font-weight: 400;
+    box-shadow: 11px -9px 43px 0px #e0e0e033 inset;
+    border-radius: 16px;
+    /* backdrop-filter: blur(40px); */
+    margin-bottom: 10px;
+    height: 42px;
+    max-width: 65%;
+}
+
+.results-wrap {
+    margin-top: 7%;
+    text-align: -webkit-center;
+}
+
+.button {
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    padding: 12px 32px;
+    
+    gap: 16px;
+    background: linear-gradient(to right, #9400FE, #0218FE);
+    border-radius: 12px;
+    margin: 40px 0 62px 0;
+    border: none;
+    cursor: pointer;
+}
+
+.text-result-bottom {
+    text-align: center;
+    font-family: 'Play';
+    font-size: 36px;
+    font-weight: 400;
+}
+
+br {
+    font-family: 'Furore';
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.material-symbols-outlined {
+    width: 58px;
+    height: 58px;
+    font-size: 58px !important;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+}
