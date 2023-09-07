@@ -322,6 +322,9 @@ body {
 .promo {
     overflow: hidden;
     margin-top: -10%;
+    z-index: 12;
+    position: relative;
+
 }
 
 .promo__container {
@@ -376,7 +379,6 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    height: 500px;
     max-width: 940px;
 }
 
@@ -674,7 +676,6 @@ body {
     .promo__item {
         background-position: 50% 50%;
         background-size: cover;
-        border: 1px solid #453d51;
         min-height: 470px;
     }
 
@@ -682,9 +683,11 @@ body {
         bottom: 70px;
     }
 
-    .promo__info {
-        height: 470px;
+    .promo__title {
+        padding-left: 38% !important;
+        color: white;
     }
+
 
     .title_search {
         font-size: 40px;
@@ -801,7 +804,12 @@ body {
     }
 
     .promo__info {
-        height: auto;
+        justify-content: center;
+
+    }
+
+    .promo__info_text {
+        max-width: 75%;
     }
 
     .promo__text {
@@ -836,6 +844,7 @@ body {
     .promo__title {
         line-height: 24px;
         font-size: 20px;
+        margin-bottom: 20%;
     }
 
     .promo__title span {
@@ -867,6 +876,7 @@ body {
     .promo__title {
         font-size: 20px;
         line-height: 32px;
+        margin-top: 14%;
     }
 
     .promo__title span {
@@ -877,14 +887,37 @@ body {
     .flipster {
         padding-bottom: 30px;
     }
+
+    .promo__item_analyze {
+        background: url("./img/slider/promo/mobile/analyst.png") no-repeat 0 0/100% 100%;
+    }
+
+    .promo__item_manage {
+        background: url("./img/slider/promo/mobile/manager.png") no-repeat 0 0/100% 100%;
+    }
+
+    .promo__item_code {
+        background: url("./img/slider/promo/mobile/developer.png") no-repeat 0 0/100% 100%;
+    }
+
+    .promo__item_design {
+        background: url("./img/slider/promo/mobile/designer.png") no-repeat 0 0/100% 100%;
+    }
+
+    .promo__item_market {
+        background: url("./img/slider/promo/mobile/marketologist.png") no-repeat 0 0/100% 100%;
+    }
+
+    .promo__item_aks {
+        background: url("./img/slider/promo/mobile/tester.png") no-repeat 0 0/100% 100%;
+    }
 }
 
 @media (max-width: 700px) {
     .promo__item {
         background-position: 50% 50%;
-        background-size: cover;
-        border: 1px solid #453d51;
-        min-height: 470px;
+        background-size: contain;
+        min-height: 33rem;
     }
 
     .promo__nav {
@@ -892,7 +925,6 @@ body {
     }
 
     .promo__info {
-        height: 470px;
     }
 
     .title_search {
@@ -1017,16 +1049,9 @@ body {
 
     .promo__item {
         border-radius: 20px;
-        background: linear-gradient(
-                315deg,
-                rgba(160, 100, 255, 0.2) 0%,
-                rgba(10, 0, 25, 0) 100%
-        ),
-        rgba(255, 255, 255, 0.05);
     }
 
     .promo__info {
-        height: auto;
     }
 
     .promo__text {
@@ -1058,9 +1083,12 @@ body {
         display: none;
     }
 
+
     .promo__title {
-        line-height: 24px;
         font-size: 20px;
+        line-height: 32px;
+        margin-top: 14%;
+        margin-bottom: 25%;
     }
 
     .promo__title span {
@@ -1119,19 +1147,39 @@ body {
 
     .promo__text {
         max-width: 300px;
+
     }
 
     .flipster__item .promo__img_mobile {
         max-width: 300px;
     }
 
+    .flipster__nav {
+        bottom: 15%;
+        left: 37%;
+    }
+
+    .flipster__button {
+        bottom: 14%;
+    }
+
+    .flipster__button--prev {
+        left: 41%;
+    }
+
     .promo {
         padding-top: 0px;
+        margin-bottom: -33%;
     }
 
     .promo {
         padding-top: 40px;
         margin-top: -24%;
+
+    }
+
+    .promo__info_text_bottom {
+        font-size: 12px;
     }
 
     .promo__container {
@@ -1144,8 +1192,9 @@ body {
     }
 
     .promo__title {
-        font-size: 18px;
-        margin-bottom: 20px;
+
+        margin-top: 36%;
+        margin-bottom: 19%;
     }
 
     .promo__title span {
@@ -1158,7 +1207,6 @@ body {
     }
 
     .promo__info {
-        height: 500px;
     }
 
     .promo .flipster {
