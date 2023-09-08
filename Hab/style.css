@@ -303,11 +303,13 @@ body {
     left: 14%;
     position: relative;
     top: 6%;
+    cursor: pointer;
 }
 
 .lock {
     display: block;
     margin: 0 auto;
+    cursor: pointer;
 }
 
 .triangle-down {

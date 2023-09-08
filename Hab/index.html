@@ -9,13 +9,15 @@
   <link rel="stylesheet" href="../components/footer.php" />
   <link rel="stylesheet" href="../main.css" />
   <link rel="stylesheet" href="../animation.css" />
+  <link rel="stylesheet" href="./main.js">
   <link
           rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
   />
+  <link rel="stylesheet" href="artefacts.css"/>
   <script src="main.js"></script>
 </head>
-<body>
+<body style="z-index: 1;">
 <!-- Хедер -->
 <div class="hub_home">
   <header class="section_wrap">
@@ -422,7 +424,7 @@
                             onclick="flipCard('card7')"
                     >help</span
                     >
-                <img class="img_people" src="./img/achivments.svg" alt="" />
+                <img class="img_people" id="openModal" src="./img/achivments.svg" alt="" />
                 <div class="profession">Результаты</div>
                 <span class="triangle-down"></span>
               </div>
@@ -457,7 +459,7 @@
                     >help</span
                     >
                 <div class="profession-lock">
-                  <img class="lock" src="./img/lock.svg" alt="" />
+                  <img class="lock" id="openModal" src="./img/lock.svg" alt="" />
                 </div>
                 <div class="profession">Артефакты</div>
                 <span class="triangle-down"></span>
@@ -511,6 +513,34 @@
         </div>
       </div>
     </section>
+
+    <!--Всплывающие окна-->
+
+    <section id="modalArtefacts" class="artefacts-section">
+      <div class="artefacts-section_wrap"> 
+          <span class="material-symbols-outlined close">close</span>
+          <div class="text">Здесь ты можешь ознакомиться с результатами прохождения профориентации. Надеемся, <br>что ты сможешь определиться и с уверенностью начнешь свой путь в IT сфере!</div>
+          <div class="text-artefact">артефакты</div>
+          <div style="display: flex; justify-content: center;">
+              <div class="link-section">
+                  <p>Это ссылка на твой сайт, который ты сделал в ходе прохождения комикса</p>
+                  <p class="link" href="#">https://www.prof.1T.ru/user.....</p>
+              </div>
+          </div>
+          <div style="display: flex; justify-content: center;">
+              <button class="button1">Скопировать ссылку <img src="./img/Link copy.svg" alt=""></button>
+          </div>
+          <div class="question">
+              <p>Ты спрашиваешь, зачем она тебе нужна?</p>  
+              <p>Отвечу! Затем что ты поучаствовал в реальной реализации проекта.</p>  
+              <p>Ты научился делать продуктовый лендинг и можешь добавить его к себе в портфолио!</p>
+          </div>
+          <div style="display: flex; justify-content: center;">
+              <div class="text-artefact-bottom">Курсы от 1Т нацелены на получение профессиональных компетенций в каждой профессии</div>
+          </div>
+              <button class="button2">Записаться на курсы</button>
+          </div>
+  </section>
 
     <!--Ита финальная-->
 
