@@ -10,6 +10,7 @@ $('.my-flipster').flipster({
 $('body').on('click', 'a.flipster__nav__link', function (e) {
     e.preventDefault();
 });
+
 let img = document.querySelector('.ita_img_cloud_big')
 if (innerWidth < 1000) {
     img.src = './img/cloud_ita_big.svg'

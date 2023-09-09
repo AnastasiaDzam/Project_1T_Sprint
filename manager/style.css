@@ -1,5 +1,12 @@
 /* МЕНЕДЖЕР */
 
+
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+}
+
 .main_manager {
     background: url("img/background/bg_top_left.png") no-repeat left 300% top 2%,
     url("img/background/bg_top_ellipse_right.png") no-repeat right top 10%,
@@ -18,7 +25,10 @@
     counter-reset: count;
 }
 
-
+textarea {
+    overflow: hidden;
+    resize: vertical;
+}
 
 body {
     counter-reset: section;
@@ -382,6 +392,18 @@ body {
 .question_answer_subtitle {
     display: flex;
     align-items: center;
+}
+
+.question_answer_block input[type="radio"]:checked + label:before {
+    background: url(../img/radioButton.png) 0 0 no-repeat;
+}
+
+.question_answer_text.correct::before {
+    background: url('./img/tests/Icon_correct.svg') 8%/96% no-repeat !important;
+}
+
+.question_answer_text.wrong::before {
+    background: url('./img/tests/Icon_wrong.svg') 8%/96% no-repeat !important;
 }
 
 .question_answer_subtitle,

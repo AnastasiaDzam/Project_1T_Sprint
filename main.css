@@ -322,9 +322,6 @@ body {
 .promo {
     overflow: hidden;
     margin-top: -10%;
-    z-index: 12;
-    position: relative;
-
 }
 
 .promo__container {
@@ -379,6 +376,7 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    height: 500px;
     max-width: 940px;
 }
 
@@ -556,6 +554,8 @@ body {
     transform: translate(0);
 }
 
+
+
 /*-------------------------------------------------- MEDIA --------------------------------------------*/
 @media (max-width: 1760px) {
     .title_search {
@@ -698,11 +698,11 @@ body {
     }
 
     .wrap_people_text {
-        padding: 16px 19px;
+        padding: 50px 19px;
         font-size: 20px;
         margin: -5% 20px 11px;
-        margin-bottom: 75%;
-        top: 38rem;
+
+        top: 35rem;
     }
 
     .btn_tg,

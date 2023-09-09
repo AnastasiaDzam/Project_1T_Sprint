@@ -1,5 +1,11 @@
 let correct_answer
+const textarea = document.querySelector('textarea');
 
+textarea.addEventListener('keyup', function () {
+    if (this.scrollTop > 0) {
+        this.style.height = this.scrollHeight + "px";
+    }
+});
 document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.question_answer_btn').forEach((btns) => {
         btns.disabled = true
@@ -21,8 +27,6 @@ let correctAnswers = {
 };
 
 function check(helpId, btnId, qId) {
-    let correct = 'url(img/tests/Icon_correct.svg) 0 0 no-repeat'
-    let incorrect = 'url(img/tests/Icon_wrong.svg)'
     const helping = document.getElementById(helpId);
     const btn = document.getElementById(btnId);
     const form = document.getElementById(qId);
@@ -36,13 +40,11 @@ function check(helpId, btnId, qId) {
                 btn.classList.add("hide");
                 form.elements[question].forEach(radio => {
                     if (radio.value === correct_answer) {
-                        radio.parentElement.lastElementChild.classList.remove("::before");
-                        radio.parentElement.lastElementChild.classList.add('.correct');
+                        radio.parentElement.lastElementChild.classList.add('correct')
                     } else {
-
+                        radio.parentElement.lastElementChild.classList.add('wrong')
                     }
                     radio.disabled = true;
-
                 })
                 return
             } else if (correct_answer !== correctAnswers[question]) {
@@ -50,8 +52,13 @@ function check(helpId, btnId, qId) {
                 helping.classList.remove("hide");
                 btn.classList.add("hide");
                 form.elements[question].forEach(radio => {
+                    if (radio.value === correctAnswers[question]) {
+                        radio.parentElement.lastElementChild.classList.add('correct')
+                    } else {
+                        radio.parentElement.lastElementChild.classList.add('wrong')
+                    }
                     radio.disabled = true;
-                });
+                })
                 return;
             }
         }

@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="../main.css"/>
     <link rel="stylesheet" href="style.css"/>
     <link rel="stylesheet" href="../animation.css"/>
-    <script src="main.js"></script>
+    <script defer src="main.js"></script>
+    <script defer src="./modal.js"></script>
     <link
             rel="stylesheet"
             href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
@@ -1004,7 +1005,9 @@
                         проверки с вами свяжутся через Telegram
                     </div>
                 </div>
-                <input class="task_input" type="text" placeholder="Введите ответ"/>
+                <form action="">
+                    <textarea class="task_input" rows="1" placeholder="Введите ответ"></textarea>
+                </form>
                 <button class="question_answer_btn comics_m" type="submit">
                     Отправить
                 </button>
@@ -1053,6 +1056,5 @@
       include_once '../components/footer.php';
       ?>
 </footer>
-<script src="./modal.js"></script>
 </body>
 </html>
