@@ -285,6 +285,7 @@ body {
     font-size: 26px;
     font-weight: 700;
     font-family: "Montserrat";
+
 }
 
 .profession-lock {
@@ -303,11 +304,13 @@ body {
     left: 14%;
     position: relative;
     top: 6%;
+    cursor: pointer;
 }
 
 .lock {
     display: block;
     margin: 0 auto;
+    cursor: pointer;
 }
 
 .triangle-down {
