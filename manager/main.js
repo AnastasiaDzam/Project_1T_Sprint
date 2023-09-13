@@ -61,14 +61,13 @@ function check(helpId, btnId, qId) {
                     }
                     radio.disabled = true;
                 })
-                })
+                }
                 return;
             }
         }
 
     }
     ;
-};
 let text= document.getElementById('textarea_xds')
 text.addEventListener('keyup', function () {
     if (this.scrollTop > 0) {
