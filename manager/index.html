@@ -8,8 +8,9 @@
     <link rel="stylesheet" href="../main.css"/>
     <link rel="stylesheet" href="style.css"/>
     <link rel="stylesheet" href="../animation.css"/>
-    <script defer src="main.js"></script>
-    <script defer src="./modal.js"></script>
+    <script src="../js/jquery.min.js"></script>
+    <script src="main.js"></script>
+    <script src="adaptive.js"></script>
     <link
             rel="stylesheet"
             href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
@@ -22,15 +23,17 @@
     <header class="background_city_prof">
         <div class="section_wrap">
             <div class="background_manager">
-                <a href="#"
-                ><img class="img_width" src="img/logo.svg" alt="logo"
-                /></a>
+                <a href="#" class="sprint_logo"
+                ><img class="img_width logo_pc" src="img/logo.svg" alt="logo"
+                />
+                 <img class="img_width logo_adaptive" src="img/adaptive/1t_logo.svg" alt="logo"/>
+              </a>
                 <div class="wrap_header_btn">
                     <button class="btn_user btn_hover_gradient">
-                        <img src="../img/user.svg" alt=""/>
+                        <img src="../img/user.svg" class="person" alt=""/>
                         <span class="name_user">Андрей Петров</span>
                     </button>
-                    <button class="btn_exit btn_hover_transparent">Выход</button>
+                    <button class="btn_exit btn_hover_transparent btn_tg">Выход</button>
                 </div>
             </div>
         </div>
@@ -59,7 +62,6 @@
                     <p class="modal-title">Ранее в комиксе...</p>
                     <span
                             class="material-symbols-outlined modal_exit"
-                            style="font-size: 50px !important"
                             id="closeModal"
                     >close</span
                     >
@@ -73,21 +75,53 @@
         </section>
 
         <!-- Комикс №1-->
-        <section class="section_wrap">
+        <section class="section_wrap comics_block pc_hide" id="comics_block">
             <div class="contain">
+              <div>
                 <img
                         class="img_width"
                         src="img/manager_comics_block_1.svg"
                         alt="comics"
                 />
+              </div>
+              <div>
                 <img
                         class="img_width"
                         src="img/manager_comics_block_2.svg"
                         alt="comics"
                 />
+              </div>
             </div>
         </section>
 
+        <section class="section_wrap adaptiv_comics_block" id="adaptiv_comics_block">
+          <div class="contain ">
+              <div class="" id="authors-list1">
+                  <div class="adaptiv_comics_box" id="adaptiv_block_2">
+                      <img class="img_width" src="img/adaptive/comics1.svg" alt="comics"/>
+                  </div>
+                  <div class="adaptiv_comics_box comics_hide" id="adaptiv_block_3">
+                      <img class="img_width" src="img/adaptive/comics2.svg" alt="comics"/>
+                  </div>
+
+                  <div class="adaptiv_comics_box comics_hide" id="adaptiv_block_4">
+                      <img class="img_width" src="img/adaptive/comics3.svg" alt="comics"/>
+                  </div>
+
+                  <div class="adaptiv_comics_box comics_hide" id="adaptiv_block_5">
+                      <img class="img_width" src="img/adaptive/comics4.svg" alt="comics"/>
+                  </div>
+              </div>
+              <div class="comics_btn" id="read_next_1">
+                  <button class="comics_btn_add" >Читать дальше...</button>
+
+                  <svg xmlns="http://www.w3.org/2000/svg" width="26" height="25" viewBox="0 0 26 25" fill="none">
+                      <path d="M4.91942 8.65208L10.1963 13.7162C11.5568 15.0218 12.237 15.6746 13.0653 15.6576C13.8935 15.6405 14.5463 14.9603 15.8519 13.5998L20.916 8.32296"
+                            stroke="#DCDCF0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+              </div>
+
+      </section>
         <!-- Менеджер Олег -->
         <section class="section_wrap">
             <div class="contain">
@@ -179,6 +213,9 @@
                             </filter>
                         </defs>
                     </svg>
+                    <div class="oleg_adaptive">
+                    <img src="img/adaptive/oleg_circle.svg" class="oleg_circle" alt="oleg_circle">
+                    </div>
                     <div>
                         <p class="oleg_text">
                             Как менеджер, вы будете руководить командой и управлять
@@ -188,7 +225,7 @@
                         </p>
                     </div>
                     <div class="oleg_img_wrap">
-                        <img class="img_width" src="img/oleg_block_4.png" alt="Oleg"/>
+                        <img class="img_width oleg_pc" src="img/oleg_block_4.png" alt="Oleg"/>
                     </div>
                 </div>
             </div>
@@ -204,7 +241,7 @@
                     <div class="what_doing_contain">
                         <h2 class="what_doing_title">что делает менеджер?</h2>
                         <ul class="what_doing_list">
-                            <li class="what_doing_item">
+                            <li class="what_doing_item li_1">
                                 Управляет IT-проектами с помощью персонала и стейкхолдеров
                             </li>
                             <li class="what_doing_item">
@@ -230,174 +267,162 @@
             </div>
         </section>
 
+        <img src="img/adaptive/Ita.svg" class="ita_adaptive" alt="Ita">
+        <img src="img/adaptive/Ita_text.svg" class="ita_text_adaptive" alt="Ita_text">
         <!-- Вопросы от Иты №1 -->
         <section class="section_wrap">
-            <div class="contain">
+          <div class="contain">
+            <div class="question_1_wrap">
+              <div>
+                <img class="img_width ita_pc" src="img/ita_block_6.png" alt="ita" />
+              </div>
+              <div class="question_test">
+                <div class="check">
+                  <img
+                    class="img_warning"
+                    src="img/warning_triangle.svg"
+                    alt="warning"
+                  />
+                  Выбери один вариант ответа и нажми кнопку “Проверить”
+                </div>
+                <form class="question_answer_wrap" id="q1">
+                  <h4 class="question_answer_subtitle question_answer_count">
+                    Как менялась роль веб-дизайнера с течением времени и какие
+                    навыки теперь необходимы? Выбери вариант ответа
+                  </h4>
+                  <div class="question_answer_block">
+                    <input
+                      class="question_answer_block_input"
+                      id="radio-1"
+                      type="radio"
+                      name="radio1"
+                      value="1"
+                      
+                    />
+                    <label class="question_answer_text" for="radio-1"
+                      >Как менялась роль веб-дизайнера с течением времени и
+                      какие навыки теперь необходимы для достижения успеха в
+                      профессии?</label
+                    >
+                  </div>
+                  <div class="question_answer_block">
+                    <input
+                      class="question_answer_block_input"
+                      id="radio-2"
+                      type="radio"
+                      name="radio1"
+                      value="2"
+                    />
+                    <label class="question_answer_text" for="radio-2"
+                      >Как менялась роль веб-дизайнера с течением времени и
+                      какие навыки теперь необходимы для достижения успеха в
+                      профессии?</label
+                    >
+                  </div>
+                  <div class="question_answer_block">
+                    <input
+                      class="question_answer_block_input"
+                      id="radio-3"
+                      type="radio"
+                      name="radio1"
+                      value="3"
+                    />
+                    <label class="question_answer_text" for="radio-3"
+                      >Как менялась роль веб-дизайнера с течением времени и
+                      какие навыки теперь необходимы для достижения успеха в
+                      профессии?</label
+                    >
+                  </div>
+                  <button type="button" class="question_answer_btn" id="btn1" onclick="check('help1','btn1','q1','radio1')" >Проверить</button>
+                </form>
+                <div class="question_answer_help hide" id="help1">
+                  <img
+                    class="warning_circle"
+                    src="img/warning_circle.svg"
+                    alt="warning"
+                  />
+                  <p>
+                    Как менеджер, вы будете руководить командой и управлять
+                    проектами. Если вы организованный, можете работать в
+                    напряженных ситуациях и хорошо понимаете, как
+                    мотивировать своих коллег, то это может быть для вас.
+                  </p>
+                </div>
+
                 <div class="question_1_wrap">
-                    <div>
-                        <img class="img_width" src="img/ita_block_6.png" alt="ita"/>
-                    </div>
-                    <div class="question_test">
-                        <div class="check">
-                            <img
-                                    class="img_warning"
-                                    src="img/warning_triangle.svg"
-                                    alt="warning"
-                            />
-                            Выбери один вариант ответа и нажми кнопку “Проверить”
-                        </div>
-                        <form class="question_answer_wrap" id="q1">
-                            <h4 class="question_answer_subtitle question_answer_count">
-                                Как менялась роль веб-дизайнера с течением времени и какие
-                                навыки теперь необходимы? Выбери вариант ответа
-                            </h4>
-                            <div class="question_answer_block">
-                                <input
-                                        class="question_answer_block_input"
-                                        id="radio-1"
-                                        type="radio"
-                                        name="radio1"
-                                        value="1"
-
-                                />
-                                <label class="question_answer_text" for="radio-1"
-                                >Как менялась роль веб-дизайнера с течением времени и
-                                    какие навыки теперь необходимы для достижения успеха в
-                                    профессии?</label
-                                >
-                            </div>
-                            <div class="question_answer_block">
-                                <input
-                                        class="question_answer_block_input"
-                                        id="radio-2"
-                                        type="radio"
-                                        name="radio1"
-                                        value="2"
-                                />
-                                <label class="question_answer_text" for="radio-2"
-                                >Как менялась роль веб-дизайнера с течением времени и
-                                    какие навыки теперь необходимы для достижения успеха в
-                                    профессии?</label
-                                >
-                            </div>
-                            <div class="question_answer_block">
-                                <input
-                                        class="question_answer_block_input"
-                                        id="radio-3"
-                                        type="radio"
-                                        name="radio1"
-                                        value="3"
-                                />
-                                <label class="question_answer_text" for="radio-3"
-                                >Как менялась роль веб-дизайнера с течением времени и
-                                    какие навыки теперь необходимы для достижения успеха в
-                                    профессии?</label
-                                >
-                            </div>
-                            <button type="button" class="question_answer_btn" id="btn1"
-                                    onclick="check('help1','btn1','q1','radio1')">Проверить
-                            </button>
-                        </form>
-                        <div class="question_answer_help hide" id="help1">
-                            <img
-                                    class="warning_circle"
-                                    src="img/warning_circle.svg"
-                                    alt="warning"
-                            />
-                            <p>
-                                Как менеджер, вы будете руководить командой и управлять
-                                проектами. Если вы организованный, можете работать в
-                                напряженных ситуациях и хорошо понимаете, как
-                                мотивировать своих коллег, то это может быть для вас.
-                                Как менеджер, вы будете руководить командой и управлять
-                                проектами. Если вы организованный, можете работать в
-                                напряженных ситуациях и хорошо понимаете, как
-                                мотивировать своих коллег, то это может быть для вас.
-                            </p>
-                        </div>
-
-                        <div class="question_1_wrap">
-                            <div class="question_test">
-                                <form class="question_answer_wrap" id="q2">
-                                    <h4
-                                            class="question_answer_subtitle question_answer_count"
-                                    >
-                                        Как менялась роль веб-дизайнера с течением времени и
-                                        какие навыки теперь необходимы? Выбери вариант ответа
-                                    </h4>
-                                    <div class="question_answer_block">
-                                        <input
-                                                class="question_answer_block_input"
-                                                id="radio-4"
-                                                type="radio"
-                                                name="radio2"
-                                                value="4"
-
-                                        />
-                                        <label class="question_answer_text" for="radio-4"
-                                        >Как менялась роль веб-дизайнера с течением времени и
-                                            какие навыки теперь необходимы для достижения успеха в
-                                            профессии?</label
-                                        >
-                                    </div>
-                                    <div class="question_answer_block">
-                                        <input
-                                                class="question_answer_block_input"
-                                                id="radio-5"
-                                                type="radio"
-                                                name="radio2"
-                                                value="5"
-                                        />
-                                        <label class="question_answer_text" for="radio-5"
-                                        >Как менялась роль веб-дизайнера с течением времени и
-                                            какие навыки теперь необходимы для достижения успеха в
-                                            профессии?</label
-                                        >
-                                    </div>
-                                    <div class="question_answer_block">
-                                        <input
-                                                class="question_answer_block_input"
-                                                id="radio-6"
-                                                type="radio"
-                                                name="radio2"
-                                                value="6"
-                                        />
-                                        <label class="question_answer_text" for="radio-6"
-                                        >Как менялась роль веб-дизайнера с течением времени и
-                                            какие навыки теперь необходимы для достижения успеха в
-                                            профессии?</label
-                                        >
-                                    </div>
-                                    <button type="button" class="question_answer_btn" id="btn2"
-                                            onclick="check('help2','btn2','q2','radio2')">Проверить
-                                    </button>
-                                </form>
-                                <div class="question_answer_help hide" id="help2">
-                                    <img
-                                            class="warning_circle"
-                                            src="img/warning_circle.svg"
-                                            alt="warning"
-                                    />
-                                    <p>
-                                        Как менеджер, вы будете руководить командой и управлять
-                                        проектами. Если вы организованный, можете работать в
-                                        напряженных ситуациях и хорошо понимаете, как
-                                        мотивировать своих коллег, то это может быть для вас.
-                                        Как менеджер, вы будете руководить командой и управлять
-                                        проектами. Если вы организованный, можете работать в
-                                        напряженных ситуациях и хорошо понимаете, как
-                                        мотивировать своих коллег, то это может быть для вас.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+                  <div class="question_test" >
+                    <form class="question_answer_wrap" id="q2">
+                      <h4
+                        class="question_answer_subtitle question_answer_count"
+                      >
+                        Как менялась роль веб-дизайнера с течением времени и
+                        какие навыки теперь необходимы? Выбери вариант ответа
+                      </h4>
+                      <div class="question_answer_block">
+                        <input
+                          class="question_answer_block_input"
+                          id="radio-4"
+                          type="radio"
+                          name="radio2"
+                          value="4"
+                          
+                        />
+                        <label class="question_answer_text" for="radio-4"
+                          >Как менялась роль веб-дизайнера с течением времени и
+                          какие навыки теперь необходимы для достижения успеха в
+                          профессии?</label
+                        >
+                      </div>
+                      <div class="question_answer_block">
+                        <input
+                          class="question_answer_block_input"
+                          id="radio-5"
+                          type="radio"
+                          name="radio2"
+                          value="5"
+                        />
+                        <label class="question_answer_text" for="radio-5"
+                          >Как менялась роль веб-дизайнера с течением времени и
+                          какие навыки теперь необходимы для достижения успеха в
+                          профессии?</label
+                        >
+                      </div>
+                      <div class="question_answer_block">
+                        <input
+                          class="question_answer_block_input"
+                          id="radio-6"
+                          type="radio"
+                          name="radio2"
+                          value="6"
+                        />
+                        <label class="question_answer_text" for="radio-6"
+                          >Как менялась роль веб-дизайнера с течением времени и
+                          какие навыки теперь необходимы для достижения успеха в
+                          профессии?</label
+                        >
+                      </div>
+                      <button type="button" class="question_answer_btn" id="btn2" onclick="check('help2','btn2','q2','radio2')">Проверить</button>
+                    </form>
+                    <div class="question_answer_help hide" id="help2">
+                      <img
+                        class="warning_circle"
+                        src="img/warning_circle.svg"
+                        alt="warning"
+                      />
+                      <p>
+                        Как менеджер, вы будете руководить командой и управлять
+                        проектами. Если вы организованный, можете работать в
+                        напряженных ситуациях и хорошо понимаете, как
+                        мотивировать своих коллег, то это может быть для вас.
+                        
+                      </p>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Комикс №2 -->
-        <section class="section_wrap">
+        <section class="section_wrap comics_block last_comics" id="comics_block">
             <div class="contain comics_m">
                 <div>
                     <img
@@ -416,164 +441,183 @@
             </div>
         </section>
 
+        <section class="section_wrap adaptiv_comics_block" id="adaptiv_comics_block">
+          <div class="contain ">
+              <div class="" id="authors-list2">
+                  <div class="adaptiv_comics_box" id="adaptiv_block_2">
+                      <img class="img_width" src="img/adaptive/comics1.svg" alt="comics"/>
+                  </div>
+                  <div class="adaptiv_comics_box comics_hide" id="adaptiv_block_3">
+                      <img class="img_width" src="img/adaptive/comics2.svg" alt="comics"/>
+                  </div>
+
+                  <div class="adaptiv_comics_box comics_hide" id="adaptiv_block_4">
+                      <img class="img_width" src="img/adaptive/comics3.svg" alt="comics"/>
+                  </div>
+
+                  <div class="adaptiv_comics_box comics_hide" id="adaptiv_block_5">
+                      <img class="img_width comics_adaptive_m" src="img/adaptive/comics4.svg" alt="comics"/>
+                  </div>
+              </div>
+              <div class="comics_btn" id="read_next_2">
+                  <button class="comics_btn_add" >Читать дальше...</button>
+
+                  <svg xmlns="http://www.w3.org/2000/svg" width="26" height="25" viewBox="0 0 26 25" fill="none">
+                      <path d="M4.91942 8.65208L10.1963 13.7162C11.5568 15.0218 12.237 15.6746 13.0653 15.6576C13.8935 15.6405 14.5463 14.9603 15.8519 13.5998L20.916 8.32296"
+                            stroke="#DCDCF0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+              </div>
+
+      </section>
+
+        <img src="img/adaptive/Ita.svg" class="ita_adaptive" alt="Ita">
+        <img src="img/adaptive/Ita_text.svg" class="ita_text_adaptive" alt="Ita_text">
         <!-- Вопросы от Иты №2 -->
         <section class="section_wrap">
-            <div class="contain">
+
+          <div class="contain">
+            <div class="question_1_wrap">
+              <div>
+                <img class="img_width ita_pc" src="img/ita_block_6.png" alt="ita" />
+              </div>
+              <div class="question_test">
+                <div class="check">
+                  <img
+                    class="img_warning"
+                    src="img/warning_triangle.svg"
+                    alt="warning"
+                  />
+                  Выбери один вариант ответа и нажми кнопку “Проверить”
+                </div>
+                <form class="question_answer_wrap" id="q3" >
+                  <h4 class="question_answer_subtitle question_answer_count">
+                    Как менялась роль веб-дизайнера с течением времени и какие
+                    навыки теперь необходимы? Выбери вариант ответа
+                  </h4>
+                  <div class="question_answer_block">
+                    <input
+                      class="question_answer_block_input"
+                      id="radio-7"
+                      type="radio"
+                      name="radio3"
+                      value="7"
+                    />
+                    <label class="question_answer_text" for="radio-7"
+                      >Как менялась роль веб-дизайнера с течением времени и
+                      какие навыки теперь необходимы для достижения успеха в
+                      профессии?</label
+                    >
+                  </div>
+                  <div class="question_answer_block">
+                    <input
+                      class="question_answer_block_input"
+                      id="radio-8"
+                      type="radio"
+                      name="radio3"
+                      value="8"
+                    />
+                    <label class="question_answer_text" for="radio-8"
+                      >Как менялась роль веб-дизайнера с течением времени и
+                      какие навыки теперь необходимы для достижения успеха в
+                      профессии?</label
+                    >
+                  </div>
+                  <div class="question_answer_block">
+                    <input
+                      class="question_answer_block_input"
+                      id="radio-9"
+                      type="radio"
+                      name="radio3"
+                      value="9"
+                    />
+                    <label class="question_answer_text" for="radio-9"
+                      >Как менялась роль веб-дизайнера с течением времени и
+                      какие навыки теперь необходимы для достижения успеха в
+                      профессии?</label
+                    >
+                  </div>
+                  <button type="button" class="question_answer_btn" id="btn3" onclick="check('help3','btn3','q3','radio3')">Проверить</button>
+                </form>
+                <div class="question_answer_help hide" id="help3">
+                  <img
+                    class="warning_circle"
+                    src="img/warning_circle.svg"
+                    alt="warning"
+                  />
+                  <p>
+                    Как менеджер, вы будете руководить командой и управлять
+                    проектами. Если вы организованный, можете работать в
+                    напряженных ситуациях и хорошо понимаете, как
+                    мотивировать своих коллег, то это может быть для вас.
+                   
+                  </p>
+                  </div>
                 <div class="question_1_wrap">
-                    <div>
-                        <img class="img_width" src="img/ita_block_6.png" alt="ita"/>
-                    </div>
-                    <div class="question_test">
-                        <div class="check">
-                            <img
-                                    class="img_warning"
-                                    src="img/warning_triangle.svg"
-                                    alt="warning"
-                            />
-                            Выбери один вариант ответа и нажми кнопку “Проверить”
-                        </div>
-                        <form class="question_answer_wrap" id="q3">
-                            <h4 class="question_answer_subtitle question_answer_count">
-                                Как менялась роль веб-дизайнера с течением времени и какие
-                                навыки теперь необходимы? Выбери вариант ответа
-                            </h4>
-                            <div class="question_answer_block">
-                                <input
-                                        class="question_answer_block_input"
-                                        id="radio-7"
-                                        type="radio"
-                                        name="radio3"
-                                        value="7"
-                                />
-                                <label class="question_answer_text" for="radio-7"
-                                >Как менялась роль веб-дизайнера с течением времени и
-                                    какие навыки теперь необходимы для достижения успеха в
-                                    профессии?</label
-                                >
-                            </div>
-                            <div class="question_answer_block">
-                                <input
-                                        class="question_answer_block_input"
-                                        id="radio-8"
-                                        type="radio"
-                                        name="radio3"
-                                        value="8"
-                                />
-                                <label class="question_answer_text" for="radio-8"
-                                >Как менялась роль веб-дизайнера с течением времени и
-                                    какие навыки теперь необходимы для достижения успеха в
-                                    профессии?</label
-                                >
-                            </div>
-                            <div class="question_answer_block">
-                                <input
-                                        class="question_answer_block_input"
-                                        id="radio-9"
-                                        type="radio"
-                                        name="radio3"
-                                        value="9"
-                                />
-                                <label class="question_answer_text" for="radio-9"
-                                >Как менялась роль веб-дизайнера с течением времени и
-                                    какие навыки теперь необходимы для достижения успеха в
-                                    профессии?</label
-                                >
-                            </div>
-                            <button type="button" class="question_answer_btn" id="btn3"
-                                    onclick="check('help3','btn3','q3','radio3')">Проверить
-                            </button>
-                        </form>
-                        <div class="question_answer_help hide" id="help3">
-                            <img
-                                    class="warning_circle"
-                                    src="img/warning_circle.svg"
-                                    alt="warning"
-                            />
-                            <p>
-                                Как менеджер, вы будете руководить командой и управлять
-                                проектами. Если вы организованный, можете работать в
-                                напряженных ситуациях и хорошо понимаете, как
-                                мотивировать своих коллег, то это может быть для вас.
-                                Как менеджер, вы будете руководить командой и управлять
-                                проектами. Если вы организованный, можете работать в
-                                напряженных ситуациях и хорошо понимаете, как
-                                мотивировать своих коллег, то это может быть для вас.
-                            </p>
-                        </div>
-                        <div class="question_1_wrap">
-                            <div class="question_test">
-                                <form class="question_answer_wrap" id="q4">
-                                    <h4
-                                            class="question_answer_subtitle question_answer_count"
-                                    >
-                                        Как менялась роль веб-дизайнера с течением времени и
-                                        какие навыки теперь необходимы? Выбери вариант ответа
-                                    </h4>
-                                    <div class="question_answer_block">
-                                        <input
-                                                class="question_answer_block_input"
-                                                id="radio-10"
-                                                type="radio"
-                                                name="radio4"
-                                                value="10"
-                                        />
-                                        <label class="question_answer_text" for="radio-10"
-                                        >Как менялась роль веб-дизайнера с течением времени и
-                                            какие навыки теперь необходимы для достижения успеха в
-                                            профессии?</label
-                                        >
-                                    </div>
-                                    <div class="question_answer_block">
-                                        <input
-                                                class="question_answer_block_input"
-                                                id="radio-11"
-                                                type="radio"
-                                                name="radio4"
-                                                value="11"
-                                        />
-                                        <label class="question_answer_text" for="radio-11"
-                                        >Как менялась роль веб-дизайнера с течением времени и
-                                            какие навыки теперь необходимы для достижения успеха в
-                                            профессии?</label
-                                        >
-                                    </div>
-                                    <div class="question_answer_block">
-                                        <input
-                                                class="question_answer_block_input"
-                                                id="radio-12"
-                                                type="radio"
-                                                name="radio4"
-                                                value="12"
-                                        />
-                                        <label class="question_answer_text" for="radio-12"
-                                        >Как менялась роль веб-дизайнера с течением времени и
-                                            какие навыки теперь необходимы для достижения успеха в
-                                            профессии?</label
-                                        >
-                                    </div>
-                                    <button type="button" class="question_answer_btn" id="btn4"
-                                            onclick="check('help4','btn4','q4','radio4')">Проверить
-                                    </button>
-                                </form>
-                                <div class="question_answer_help hide" id="help4">
-                                    <img
-                                            class="warning_circle"
-                                            src="img/warning_circle.svg"
-                                            alt="warning"
-                                    />
-                                    <p>
-                                        Как менеджер, вы будете руководить командой и управлять
-                                        проектами. Если вы организованный, можете работать в
-                                        напряженных ситуациях и хорошо понимаете, как
-                                        мотивировать своих коллег, то это может быть для вас.
-                                        Как менеджер, вы будете руководить командой и управлять
-                                        проектами. Если вы организованный, можете работать в
-                                        напряженных ситуациях и хорошо понимаете, как
-                                        мотивировать своих коллег, то это может быть для вас.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+                  <div class="question_test">
+                    <form class="question_answer_wrap" id="q4">
+                      <h4
+                        class="question_answer_subtitle question_answer_count"
+                      >
+                        Как менялась роль веб-дизайнера с течением времени и
+                        какие навыки теперь необходимы? Выбери вариант ответа
+                      </h4>
+                      <div class="question_answer_block">
+                        <input
+                          class="question_answer_block_input"
+                          id="radio-10"
+                          type="radio"
+                          name="radio4"
+                          value="10"
+                        />
+                        <label class="question_answer_text" for="radio-10"
+                          >Как менялась роль веб-дизайнера с течением времени и
+                          какие навыки теперь необходимы для достижения успеха в
+                          профессии?</label
+                        >
+                      </div>
+                      <div class="question_answer_block">
+                        <input
+                          class="question_answer_block_input"
+                          id="radio-11"
+                          type="radio"
+                          name="radio4"
+                          value="11"
+                        />
+                        <label class="question_answer_text" for="radio-11"
+                          >Как менялась роль веб-дизайнера с течением времени и
+                          какие навыки теперь необходимы для достижения успеха в
+                          профессии?</label
+                        >
+                      </div>
+                      <div class="question_answer_block">
+                        <input
+                          class="question_answer_block_input"
+                          id="radio-12"
+                          type="radio"
+                          name="radio4"
+                          value="12"
+                        />
+                        <label class="question_answer_text" for="radio-12"
+                          >Как менялась роль веб-дизайнера с течением времени и
+                          какие навыки теперь необходимы для достижения успеха в
+                          профессии?</label
+                        >
+                      </div>
+                      <button type="button" class="question_answer_btn" id="btn4" onclick="check('help4','btn4','q4','radio4')">Проверить</button>
+                    </form>
+                    <div class="question_answer_help hide" id="help4">
+                      <img
+                        class="warning_circle"
+                        src="img/warning_circle.svg"
+                        alt="warning"
+                      />
+                      <p>
+                        Как менеджер, вы будете руководить командой и управлять
+                        проектами. Если вы организованный, можете работать в
+                        напряженных ситуациях и хорошо понимаете, как
+                        мотивировать своих коллег, то это может быть для вас.
+                        
+                      </p>
                     </div>
                 </div>
 
@@ -714,7 +758,7 @@
         </section>
 
         <!-- Комикс №3 -->
-        <section class="section_wrap">
+        <section class="section_wrap comics_block" id="comics_block">
             <div class="contain">
                 <div>
                     <img
@@ -722,6 +766,7 @@
                             src="img/manager_comics_block_5.svg"
                             alt=""
                     />
+                    <img src="img/adaptive/4comics.svg" class="adaptive" alt="comics">
                 </div>
             </div>
         </section>
@@ -729,10 +774,13 @@
         <!-- Этап реализации -->
         <section class="section_wrap">
             <div class="contain">
-                <div class="realization_wrap">
-                    <div>
+                <div class="realization_wrap realization_full">
+                    <div> 
+                      <img class="img_width oleg_photo" src="img/oleg_circle.png" alt="Oleg"/>
+                        <p class="oleg_name oleg_name_adaptive">Олег</p> 
                         <div class="realization_top realization_text">
-                            <div>
+
+                        <div>
                                 Далее идёт этап реализации, на котором необходимо следить за
                             </div>
                             <ul class="realization_m">
@@ -777,178 +825,168 @@
                             кратко объяснить суть моей работы в целом.
                         </div>
                     </div>
-                    <div>
-                        <img img_width src="img/oleg_circle.png" alt="Oleg"/>
-                    </div>
+                    
+                       
+                  
                 </div>
             </div>
         </section>
 
+        <img src="img/adaptive/Ita.svg" class="ita_adaptive" alt="Ita">
+        <img src="img/adaptive/Ita_text.svg" class="ita_text_adaptive" alt="Ita_text">
         <!-- Вопросы от Олега №1 -->
         <section class="section_wrap">
-            <div class="contain">
+          <div class="contain">
+            <div class="question_1_wrap">
+              <div>
+                <img class="img_width ita_pc" src="img/oleg_question.png" alt="Oleg" />
+              </div>
+              <div class="question_test">
+                <div class="check">
+                  <img
+                    class="img_warning"
+                    src="img/warning_triangle.svg"
+                    alt="warning"
+                  />
+                  Выбери один вариант ответа и нажми кнопку “Проверить”
+                </div>
+                <form class="question_answer_wrap" id="q5">
+                  <h4 class="question_answer_subtitle question_answer_count">
+                    Как менялась роль веб-дизайнера с течением времени и какие
+                    навыки теперь необходимы? Выбери вариант ответа
+                  </h4>
+                  <div class="question_answer_block">
+                    <input
+                      class="question_answer_block_input"
+                      id="radio-13"
+                      type="radio"
+                      name="radio5"
+                      value="13"
+                    />
+                    <label class="question_answer_text" for="radio-13"
+                      >Как менялась роль веб-дизайнера с течением времени и
+                      какие навыки теперь необходимы для достижения успеха в
+                      профессии?</label
+                    >
+                  </div>
+                  <div class="question_answer_block">
+                    <input
+                      class="question_answer_block_input"
+                      id="radio-14"
+                      type="radio"
+                      name="radio5"
+                      value="14"
+                    />
+                    <label class="question_answer_text" for="radio-14"
+                      >Как менялась роль веб-дизайнера с течением времени и
+                      какие навыки теперь необходимы для достижения успеха в
+                      профессии?</label
+                    >
+                  </div>
+                  <div class="question_answer_block">
+                    <input
+                      class="question_answer_block_input"
+                      id="radio-15"
+                      type="radio"
+                      name="radio5"
+                      value="15"
+                    />
+                    <label class="question_answer_text" for="radio-15"
+                      >Как менялась роль веб-дизайнера с течением времени и
+                      какие навыки теперь необходимы для достижения успеха в
+                      профессии?</label
+                    >
+                  </div>
+                  <button type="button" class="question_answer_btn" id="btn5" onclick="check('help5','btn5','q5','radio5')">Проверить</button>
+                </form>
+                <div class="question_answer_help hide" id="help5">
+                  <img
+                    class="warning_circle"
+                    src="img/warning_circle.svg"
+                    alt="warning"
+                 />
+                  <p>
+                    Как менеджер, вы будете руководить командой и управлять
+                    проектами. Если вы организованный, можете работать в
+                    напряженных ситуациях и хорошо понимаете, как
+                    мотивировать своих коллег, то это может быть для вас.
+                   
+                  </p>
+                </div>
                 <div class="question_1_wrap">
-                    <div>
-                        <img class="img_width" src="img/oleg_question.png" alt="Oleg"/>
-                    </div>
-                    <div class="question_test">
-                        <div class="check">
-                            <img
-                                    class="img_warning"
-                                    src="img/warning_triangle.svg"
-                                    alt="warning"
-                            />
-                            Выбери один вариант ответа и нажми кнопку “Проверить”
-                        </div>
-                        <form class="question_answer_wrap" id="q5">
-                            <h4 class="question_answer_subtitle question_answer_count">
-                                Как менялась роль веб-дизайнера с течением времени и какие
-                                навыки теперь необходимы? Выбери вариант ответа
-                            </h4>
-                            <div class="question_answer_block">
-                                <input
-                                        class="question_answer_block_input"
-                                        id="radio-13"
-                                        type="radio"
-                                        name="radio5"
-                                        value="13"
-                                />
-                                <label class="question_answer_text" for="radio-13"
-                                >Как менялась роль веб-дизайнера с течением времени и
-                                    какие навыки теперь необходимы для достижения успеха в
-                                    профессии?</label
-                                >
-                            </div>
-                            <div class="question_answer_block">
-                                <input
-                                        class="question_answer_block_input"
-                                        id="radio-14"
-                                        type="radio"
-                                        name="radio5"
-                                        value="14"
-                                />
-                                <label class="question_answer_text" for="radio-14"
-                                >Как менялась роль веб-дизайнера с течением времени и
-                                    какие навыки теперь необходимы для достижения успеха в
-                                    профессии?</label
-                                >
-                            </div>
-                            <div class="question_answer_block">
-                                <input
-                                        class="question_answer_block_input"
-                                        id="radio-15"
-                                        type="radio"
-                                        name="radio5"
-                                        value="15"
-                                />
-                                <label class="question_answer_text" for="radio-15"
-                                >Как менялась роль веб-дизайнера с течением времени и
-                                    какие навыки теперь необходимы для достижения успеха в
-                                    профессии?</label
-                                >
-                            </div>
-                            <button type="button" class="question_answer_btn" id="btn5"
-                                    onclick="check('help5','btn5','q5','radio5')">Проверить
-                            </button>
-                        </form>
-                        <div class="question_answer_help hide" id="help5">
-                            <img
-                                    class="warning_circle"
-                                    src="img/warning_circle.svg"
-                                    alt="warning"
-                            />
-                            <p>
-                                Как менеджер, вы будете руководить командой и управлять
-                                проектами. Если вы организованный, можете работать в
-                                напряженных ситуациях и хорошо понимаете, как
-                                мотивировать своих коллег, то это может быть для вас.
-                                Как менеджер, вы будете руководить командой и управлять
-                                проектами. Если вы организованный, можете работать в
-                                напряженных ситуациях и хорошо понимаете, как
-                                мотивировать своих коллег, то это может быть для вас.
-                            </p>
-                        </div>
-                        <div class="question_1_wrap">
-                            <div class="question_test">
-                                <form class="question_answer_wrap" id="q6">
-                                    <h4
-                                            class="question_answer_subtitle question_answer_count"
-                                    >
-                                        Как менялась роль веб-дизайнера с течением времени и
-                                        какие навыки теперь необходимы? Выбери вариант ответа
-                                    </h4>
-                                    <div class="question_answer_block">
-                                        <input
-                                                class="question_answer_block_input"
-                                                id="radio-16"
-                                                type="radio"
-                                                name="radio6"
-                                                value="16"
-                                        />
-                                        <label class="question_answer_text" for="radio-16"
-                                        >Как менялась роль веб-дизайнера с течением времени и
-                                            какие навыки теперь необходимы для достижения успеха в
-                                            профессии?</label
-                                        >
-                                    </div>
-                                    <div class="question_answer_block">
-                                        <input
-                                                class="question_answer_block_input"
-                                                id="radio-17"
-                                                type="radio"
-                                                name="radio6"
-                                                value="17"
-                                        />
-                                        <label class="question_answer_text" for="radio-17"
-                                        >Как менялась роль веб-дизайнера с течением времени и
-                                            какие навыки теперь необходимы для достижения успеха в
-                                            профессии?</label
-                                        >
-                                    </div>
-                                    <div class="question_answer_block">
-                                        <input
-                                                class="question_answer_block_input"
-                                                id="radio-18"
-                                                type="radio"
-                                                name="radio6"
-                                                value="18"
-                                        />
-                                        <label class="question_answer_text" for="radio-18"
-                                        >Как менялась роль веб-дизайнера с течением времени и
-                                            какие навыки теперь необходимы для достижения успеха в
-                                            профессии?</label
-                                        >
-                                    </div>
-                                    <button type="button" class="question_answer_btn" id="btn6"
-                                            onclick="check('help6','btn6','q6','radio6')">Проверить
-                                    </button>
-                                </form>
-                                <div class="question_answer_help hide" id="help6">
-                                    <img
-                                            class="warning_circle"
-                                            src="img/warning_circle.svg"
-                                            alt="warning"
-                                    />
-                                    <p>
-                                        Как менеджер, вы будете руководить командой и управлять
-                                        проектами. Если вы организованный, можете работать в
-                                        напряженных ситуациях и хорошо понимаете, как
-                                        мотивировать своих коллег, то это может быть для вас.
-                                        Как менеджер, вы будете руководить командой и управлять
-                                        проектами. Если вы организованный, можете работать в
-                                        напряженных ситуациях и хорошо понимаете, как
-                                        мотивировать своих коллег, то это может быть для вас.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+                  <div class="question_test">
+                    <form class="question_answer_wrap" id="q6">
+                      <h4
+                        class="question_answer_subtitle question_answer_count"
+                      >
+                        Как менялась роль веб-дизайнера с течением времени и
+                        какие навыки теперь необходимы? Выбери вариант ответа
+                      </h4>
+                      <div class="question_answer_block">
+                        <input
+                          class="question_answer_block_input"
+                          id="radio-16"
+                          type="radio"
+                          name="radio6"
+                          value="16"
+                        />
+                        <label class="question_answer_text" for="radio-16"
+                          >Как менялась роль веб-дизайнера с течением времени и
+                          какие навыки теперь необходимы для достижения успеха в
+                          профессии?</label
+                        >
+                      </div>
+                      <div class="question_answer_block">
+                        <input
+                          class="question_answer_block_input"
+                          id="radio-17"
+                          type="radio"
+                          name="radio6"
+                          value="17"
+                        />
+                        <label class="question_answer_text" for="radio-17"
+                          >Как менялась роль веб-дизайнера с течением времени и
+                          какие навыки теперь необходимы для достижения успеха в
+                          профессии?</label
+                        >
+                      </div>
+                      <div class="question_answer_block">
+                        <input
+                          class="question_answer_block_input"
+                          id="radio-18"
+                          type="radio"
+                          name="radio6"
+                          value="18"
+                        />
+                        <label class="question_answer_text" for="radio-18"
+                          >Как менялась роль веб-дизайнера с течением времени и
+                          какие навыки теперь необходимы для достижения успеха в
+                          профессии?</label
+                        >
+                      </div>
+                      <button type="button" class="question_answer_btn" id="btn6" onclick="check('help6','btn6','q6','radio6')">Проверить</button>
+                    </form>
+                    <div class="question_answer_help hide" id="help6">
+                      <img
+                        class="warning_circle"
+                        src="img/warning_circle.svg"
+                        alt="warning"
+                      />
+                      <p>
+                        Как менеджер, вы будете руководить командой и управлять
+                        проектами. Если вы организованный, можете работать в
+                        напряженных ситуациях и хорошо понимаете, как
+                        мотивировать своих коллег, то это может быть для вас.
+                       
+                      </p>
+
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Видео -->
-        <section class="section_wrap">
+        <section class="section_wrap screencast">
             <div class="contain">
                 <div class="container-video">
                     <div class="video-text">СМОТРИ СКРИНКАСТ ПРЯМО СЕЙЧАС</div>
@@ -969,7 +1007,7 @@
         </section>
 
         <!-- Комикс №4 -->
-        <section class="section_wrap">
+        <section class="section_wrap comics_block" id="comics_block">
             <div class="contain">
                 <div>
                     <img
@@ -1005,17 +1043,15 @@
                         проверки с вами свяжутся через Telegram
                     </div>
                 </div>
-                <form action="">
-                    <textarea class="task_input" rows="1" placeholder="Введите ответ"></textarea>
-                </form>
-                <button class="question_answer_btn comics_m" type="submit">
+                <input class="task_input" type="text" placeholder="Введите ответ"/>
+                <button class="question_answer_btn comics_m submit_b" type="submit">
                     Отправить
                 </button>
             </div>
         </section>
 
         <!-- Комикс №5 -->
-        <section class="section_wrap">
+        <section class="section_wrap last_comics ">
             <div class="contain">
                 <div>
                     <img
@@ -1033,6 +1069,11 @@
                 </div>
             </div>
         </section>
+        <div class="" id="authors-list">
+          <div class="adaptiv_comics_box" id="adaptiv_block_2">
+              <img class="img_width last_one" src="img/adaptive/comics_end.svg" alt="comics"/>
+          </div>
+          </div>
 
         <!-- Конец главы -->
         <section class="section_wrap">
