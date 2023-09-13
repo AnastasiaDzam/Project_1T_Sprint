@@ -127,7 +127,6 @@ h1 {
 
 /* Карта товара */
 
-
 .order-text {
     color: var(--1, #2E363E);
     font-size: 24px;
@@ -139,7 +138,6 @@ h2 {
     color: #262A2D;
     text-align: center;
     padding: 60px 0 40px 0;
-    
     font-size: 36px;
     font-weight: 700;
     line-height: 133%;
@@ -239,6 +237,7 @@ li {
     font-weight: 500;
     line-height: 17px;
 }
+
 .counter-wrap {
     width: 76%;
 }
