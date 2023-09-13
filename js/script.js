@@ -10,6 +10,7 @@ $('.my-flipster').flipster({
 $('body').on('click', 'a.flipster__nav__link', function (e) {
     e.preventDefault();
 });
+
 let img = document.querySelector('.ita_img_cloud_big')
 if (innerWidth < 1000) {
     img.src = './img/cloud_ita_big.svg'
@@ -17,7 +18,6 @@ if (innerWidth < 1000) {
     $('#adaptiv_comics_block').css('display', 'block')
 
 } else {
-    console.log('else')
     img.src = './img/cloud.svg'
     $('#comics_block').css('display', 'block')
     $('#adaptiv_comics_block').css('display', 'none')

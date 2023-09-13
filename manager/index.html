@@ -4,13 +4,13 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Менеджер</title>
+    <link rel="stylesheet" href="../components/footer.css"/>
     <link rel="stylesheet" href="../main.css"/>
     <link rel="stylesheet" href="style.css"/>
     <link rel="stylesheet" href="../animation.css"/>
     <script src="../js/jquery.min.js"></script>
     <script src="main.js"></script>
     <script src="adaptive.js"></script>
-    
     <link
             rel="stylesheet"
             href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
@@ -333,7 +333,7 @@
                       профессии?</label
                     >
                   </div>
-                  <button type="button" class="question_answer_btn" id="btn1" onclick="check('help1','btn1','q1','radio1')" >Проверить</button>
+                  <button type="button" class="question_answer_btn" id="btn1" onclick="check('help1','btn1','q1')" >Проверить</button>
                 </form>
                 <div class="question_answer_help hide" id="help1">
                   <img
@@ -417,11 +417,8 @@
                         
                       </p>
                     </div>
-                  </div>
                 </div>
-              </div>
             </div>
-          </div>
         </section>
 
         <!-- Комикс №2 -->
@@ -477,6 +474,7 @@
         <img src="img/adaptive/Ita_text.svg" class="ita_text_adaptive" alt="Ita_text">
         <!-- Вопросы от Иты №2 -->
         <section class="section_wrap">
+
           <div class="contain">
             <div class="question_1_wrap">
               <div>
@@ -621,10 +619,7 @@
                         
                       </p>
                     </div>
-                  </div>
                 </div>
-              </div>
-            </div>
 
                 <!-- <div class="question_test_new">
                       <div class="test_wrap">
@@ -909,7 +904,7 @@
                     class="warning_circle"
                     src="img/warning_circle.svg"
                     alt="warning"
-                  />
+                 />
                   <p>
                     Как менеджер, вы будете руководить командой и управлять
                     проектами. Если вы организованный, можете работать в
@@ -984,12 +979,10 @@
                         мотивировать своих коллег, то это может быть для вас.
                        
                       </p>
+
                     </div>
-                  </div>
                 </div>
-              </div>
             </div>
-          </div>
         </section>
 
         <!-- Видео -->
@@ -1050,7 +1043,9 @@
                         проверки с вами свяжутся через Telegram
                     </div>
                 </div>
-                <input class="task_input" type="text" placeholder="Введите ответ"/>
+                <form>
+                  <textarea class="task_input" rows="1" placeholder="Введите ответ" id="textarea_xds"></textarea>
+              </form>
                 <button class="question_answer_btn comics_m submit_b" type="submit">
                     Отправить
                 </button>
@@ -1087,7 +1082,8 @@
             <div class="contain">
                 <h2 class="end_text">КОНЕЦ ГЛАВЫ</h2>
                 <div class="end_link">
-                    <a class="end_hab btn_hover_transparent" href="../Hab/index.html"
+                    <a class="end_hab btn_hover_transparent" target="_blank" href="../Hab/index.php"
+
                     >Вернуться в ХАБ</a
                     >
                     <a class="end_next_for btn_hover_gradient" href="#"
@@ -1100,7 +1096,7 @@
 </div>
 <footer>
     <?php
-      include_once 'components/footer.php';
+      include_once '../components/footer.php';
       ?>
 </footer>
 <script src="./modal.js"></script>
