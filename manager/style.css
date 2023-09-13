@@ -20,6 +20,7 @@
 
 body {
   counter-reset: section;
+  overflow-x:hidden;
 }
 
 .home {
@@ -190,6 +191,7 @@ body {
   position: absolute;
   right: 5%;
   top: 5%;
+  font-size: 50px !important;
 }
 
 .modal-title {
@@ -207,6 +209,34 @@ body {
   color: #fff;
   padding: 50px 176px 100px 100px;
 }
+.adaptiv_comics_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.comics_hide {
+  display: none;
+}
+.comics_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.comics_btn_add {
+  color: #fff;
+  text-align: center;
+  font-family: "Play";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  margin-top: 10px;
+  border: none;
+  background: none;
+}
 
 #modal {
   display: none;
@@ -217,6 +247,7 @@ body {
 .oleg_wrap {
   position: relative;
   margin-top: 160px;
+  left: 5%;
 }
 
 .oleg_text {
@@ -621,4 +652,390 @@ background-image:url("./manager/img/tests/Icon_wrong.svg");
 
 .hide{
   display: none;
+}
+.last_one{
+  display: none;
+}
+.oleg_adaptive{
+  display: none;
+}
+.oleg_name_adaptive{
+  display: none;
+}
+.oleg_photo{
+  width: 318px;
+  height: 303px;
+  position: relative;
+  left: 1300px;
+  top: 20px;
+}
+.realization_top{
+  margin-bottom: 63px;
+  position: relative;
+  bottom: 300px;
+}
+.realization_center{
+  position: relative;
+  bottom: 350px;
+}
+.realization_bottom{
+  bottom: 353px;
+  position: relative;
+}
+.realization_full{
+  width: 1720px;
+  height: 600px;
+  padding: 19px 47px;
+}
+.oleg_pc{
+  position: relative;
+  bottom: 2px;
+}
+.logo_adaptive{
+  display: none;
+}
+.ita_adaptive,.ita_text_adaptive{
+  display: none;
+}
+.adaptive{
+  display: none;
+}
+.adaptiv_comics_block{
+  display:none;
+}
+.comics_adaptive_m{
+  margin-bottom: 20%;
+}
+@media (max-width: 400px){
+  .btn_tg{
+    padding: 8px 16px;
+    font-size: 16px;
+  }
+  .question_answer_wrap{
+    width: 353px;
+    height: 329px;
+  }
+  .question_answer_text,.question_answer_subtitle{
+    font-size: 12px;
+    width: 325px;
+    height: 45px;
+    margin-left: -46px;
+    bottom: -21px;
+  }
+  .question_answer_count::before{
+    margin-right: 14px;
+  }
+  .question_answer_block label:before{
+    left: -15px;
+    bottom: 3px;
+  }
+  .question_answer_subtitle{
+    margin-left: -65px;
+  }
+  .question_answer_btn{
+    margin-top: 26px;
+    height: 40px;
+    width: 94px;
+    border-radius: 12px;
+    font-size: 12px;
+    padding: 13px 19px;
+  }
+  .question_answer_text{
+    margin-bottom: 12px;
+  }
+  .warning_circle{
+    height: 25px;
+    width: 44px;
+    padding-right: 14px;
+  }
+  .question_answer_help{
+    height: 110px;
+    width: 353px;
+    font-size: 12px;
+    padding: 9px 9px;
+    margin-bottom: 20px;
+  }
+  .screencast{
+    display: none;
+  }
+  .task_wrap{
+    padding: 12px;
+    height: 69px;
+    width: 353px;
+    margin-left: 2px;
+  }
+  .task_text{
+    font-size: 12px;
+    padding-left: 25px;
+  }
+  .task_input{
+    width: 353px;
+    border-color: rgba(142, 36, 170, 1);
+    height: 40px;
+    font-size: 12px;
+    padding: 23px;
+    margin: 10px 0 0px 0;
+  }
+  .submit_b{
+    width: 171px;
+    height: 40px;
+    font-size: 16px;
+    padding: 10px 44px;
+    border-radius: 12px;
+    margin-top: 10px;
+    margin-bottom: 60px;
+    background: linear-gradient(90deg, #C800C8 0%, #9600FF 100%, #9600FF 100%);
+  }
+  .end_text{
+    font-size: 24px;
+  }
+  .end_comics{
+    display: none;
+  }
+  .last_comics{
+    display: none;
+  }
+  .last_one{
+    display: initial;
+    margin-bottom: 60px;
+  }
+  .realization_wrap{
+    height: 647px;
+    width: 353px;
+    padding: 15px 11px 0px 27px;
+    left: 5px;
+    position: relative;
+    margin-bottom: 70px;
+  }
+  .realization_text{
+    font-size: 12px;
+  }
+  .realization_introduction{
+    margin-bottom: 20px;
+  }
+  .oleg_svg{
+    left: 0%;
+    width: 362px;
+    height: 102px;
+    margin-bottom: 353px;
+  }
+  .oleg_text{
+    top: 10%;
+    left: 36%;
+    font-size: 12px;
+  }
+  .oleg_img_wrap{
+    display: none;
+  }
+  .oleg_adaptive{
+    display: initial;
+  }
+  .oleg_circle{
+    top: -448px;
+    left: 44px;
+    position: relative;
+  }
+  .oleg_wrap{
+    margin-top: 5px;
+    width: 362px;
+    height: 102px;
+    margin-bottom: 323px;
+  }
+  .end_hab{
+    width: 172px;
+    display: flex;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 12px;
+    padding: 10px 20px;
+  }
+  .end_next_for{
+    display: flex;
+    bottom: 40px;
+    width: 171px;
+    font-size: 16px;
+    height: 40px;
+    position: relative;
+    left: 179px;
+    padding: 10px 24px;
+    border-radius: 12px;
+  }
+  .check{
+    width: 353px;
+    height: 56px;
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+  .img_warning {
+    padding-right: 23px;
+    width: 57px;
+    height: 26px;
+  }
+  .what_doing_item {
+    margin-bottom: 10px;
+  }
+  .what_doing_item::before {
+    margin-right: 20px;
+    font-size: 20px;
+  }
+  .what_doing_list {
+    font-size: 12px;
+  }
+  .what_doing_title {
+    font-size: 20px;
+    margin: -241px 30px 16px 0;
+  }
+  .li_1{
+    padding-left: 7px;
+  }
+  .oleg_photo{
+    position: relative;
+    top: -5px;
+    width: 46.217px;
+    height: 46px;
+    left: 0px;
+  }
+  .oleg_name_adaptive{
+    position: relative;
+    bottom: 8px;
+    color: #834997;
+    text-align: center;
+    font-family: Furore;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: initial;
+  }
+  .realization_m {
+    margin-bottom: 15px;
+  }
+  .realization_top{
+    bottom: 0px;
+  }
+  .realization_center {
+    position: relative;
+    bottom: 48px;
+  }
+  .realization_bottom {
+    bottom: 50px;
+    position: relative;
+}
+.wrap_header_btn{
+  padding-right: 0px;
+}
+.background_manager{
+  background-image: url(img/adaptive/manager_header.svg);
+}
+.btn_exit{
+  left: 15px;
+  position: relative;
+  border-radius: 12px;
+  bottom: 35px;
+}
+.btn_user{
+  position: relative;
+    left: 14px;
+    width: 171px;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 12px;
+    margin-right: 12px;
+    bottom: 35px;
+}
+.name_user {
+  margin-left: -40px;
+}
+.background_manager{
+  min-height: 0px;
+  padding: 70px 30px;
+}
+.person{
+  position: relative;
+  left: 110px;
+}
+.logo_pc{
+  display: none;
+}
+.logo_adaptive{
+  display: initial;
+}
+.sprint_logo{
+  position: relative;
+  bottom: 24px;
+}
+.modal_wrap{
+  width: 187px;
+  height: 108px;
+  left: 32%;
+  bottom: 71px;
+}
+.modal-title {
+  font-size: 12px;
+  padding-left: 33px;
+  padding-top: 21px;
+}
+.modal-text{
+  font-size: 9px;
+  font-weight: 400;
+  padding: 12px 8px 10px 10px;
+}
+.modal_exit{
+  font-size: 21px !important;
+}
+.earlier{
+  width: 113px;
+  height: 29px;
+  border-radius: 6px;
+  padding: 0px 5px;
+  margin-bottom: 48px;
+  margin-top: 10px;
+}
+.material_help{
+  font-size: 21px !important;
+}
+.earlier_min{
+  font-size: 8px;
+}
+.ita_pc{
+  display: none;
+}
+.ita_adaptive,.ita_text_adaptive{
+  display: initial;
+}
+.what_doing_contain {
+  margin-left: 15%;
+  margin-bottom: 60px;
+  width: 353px;
+}
+.what_doing_wrap{
+  right: 48px;
+}
+.ita_adaptive{
+  position: relative;
+  left: 20px;
+  bottom: 10px;
+}
+.ita_text_adaptive{
+  position: relative;
+  bottom: 69px;
+  left: 4px;
+}
+.adaptive{
+  display: initial;
+  margin-bottom: 40px;
+  margin-top: -80px;
+}
+.margin_b{
+  display: none;
+}
+.adaptiv_comics_block{
+  display: initial;
+}
+.pc_hide{
+  display: none;
+}
+.comics_btn{
+  padding-bottom: 20%;
+}
 }
