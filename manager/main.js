@@ -16,6 +16,7 @@ let correctAnswers = {
     radio2: '4',
     radio4: '10',
     radio3: '8',
+    radio3: '8',
     radio5: '13',
     radio6: '18'
 };
@@ -35,7 +36,9 @@ function check(helpId, btnId, qId) {
                 form.elements[question].forEach(radio => {
                     if (radio.value === correct_answer) {
                         radio.parentElement.lastElementChild.classList.add('correct')
+                        radio.parentElement.lastElementChild.classList.add('correct')
                     } else {
+                        radio.parentElement.lastElementChild.classList.add('wrong')
                         radio.parentElement.lastElementChild.classList.add('wrong')
                     }
                     radio.disabled = true;
@@ -51,7 +54,13 @@ function check(helpId, btnId, qId) {
                     } else {
                         radio.parentElement.lastElementChild.classList.add('wrong')
                     }
+                    if (radio.value === correctAnswers[question]) {
+                        radio.parentElement.lastElementChild.classList.add('correct')
+                    } else {
+                        radio.parentElement.lastElementChild.classList.add('wrong')
+                    }
                     radio.disabled = true;
+                })
                 })
                 return;
             }
