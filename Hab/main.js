@@ -3,4 +3,3 @@ function flipCard(cardId) {
     card.classList.toggle("flipped");
 }
 
-
