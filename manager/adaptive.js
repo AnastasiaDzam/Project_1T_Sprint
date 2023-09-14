@@ -1,18 +1,25 @@
-/*$('#read_next').click((event) => {
-    $('#authors-list > .comics_hide').first().show().removeClass('comics_hide');
-    counterShow++
-    console.log(counterShow)
-    if (counterShow >= 6) {
-        $('#read_next').hide()
-    }
-})*/
 
-// document.querySelector('comics_btn_add').addEventListener('click',()=>{
-//     console.log('ok')
-// })
 document.addEventListener('DOMContentLoaded',()=>{
-    document.querySelector('#read_next1').addEventListener('click',()=>{
-        console.log('ok')
+    let counterShow1=0;
+    document.querySelectorAll('#read_next_1').forEach((btnNext)=>{
+        btnNext.addEventListener('click',()=>{
+            $('#authors-list1 > .comics_hide').first().show().removeClass('comics_hide');
+            counterShow1++
+            console.log(counterShow2)
+            if (counterShow1 >= 3) {
+                $('#read_next_1').hide()
+            }
+        })
+    })
+    let counterShow2=0;
+    document.querySelectorAll('#read_next_2').forEach((btnNext)=>{
+        btnNext.addEventListener('click',()=>{
+            $('#authors-list2 > .comics_hide').first().show().removeClass('comics_hide');
+            counterShow2++
+            console.log(counterShow2)
+            if (counterShow2 >= 3) {
+                $('#read_next_2').hide()
+            }
+        })
     })
 })
-
