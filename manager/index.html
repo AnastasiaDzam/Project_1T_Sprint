@@ -333,7 +333,7 @@
                       профессии?</label
                     >
                   </div>
-                  <button type="button" class="question_answer_btn" id="btn1" onclick="check('help1','btn1','q1','radio1')" >Проверить</button>
+                  <button type="button" class="question_answer_btn" id="btn1" onclick="check('help1','btn1','q1')" >Проверить</button>
                 </form>
                 <div class="question_answer_help hide" id="help1">
                   <img
@@ -1043,7 +1043,9 @@
                         проверки с вами свяжутся через Telegram
                     </div>
                 </div>
-                <input class="task_input" type="text" placeholder="Введите ответ"/>
+                <form>
+                  <textarea class="task_input" rows="1" placeholder="Введите ответ" id="textarea_xds"></textarea>
+              </form>
                 <button class="question_answer_btn comics_m submit_b" type="submit">
                     Отправить
                 </button>
